@@ -1,42 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"1801 C:\Program Files\Microchip\xc8\v1.45\include\pic16f1526.h
-[s S89 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S89 . TMR3IE TMR4IE TMR5IE TMR6IE CCP3IE CCP4IE CCP5IE CCP6IE ]
-"1800
-[u S88 `S89 1 ]
-[n S88 . . ]
-"1812
-[v _PIE3bits `VS88 ~T0 @X0 0 e@147 ]
-"892
-[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S50 . TMR3IF TMR4IF TMR5IF TMR6IF CCP3IF CCP4IF CCP5IF CCP6IF ]
-"891
-[u S49 `S50 1 ]
-[n S49 . . ]
-"903
-[v _PIR3bits `VS49 ~T0 @X0 0 e@19 ]
-"9315
-[v _RA3 `Vb ~T0 @X0 0 e@99 ]
-"9313
-[v _RA2 `Vb ~T0 @X0 0 e@98 ]
-"69 blynd.c
-[v _writeUART `(v ~T0 @X0 0 ef1`*uc ]
-"6670 C:\Program Files\Microchip\xc8\v1.45\include\pic16f1526.h
-[s S334 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :2 `uc 1 ]
-[n S334 . TMR3ON . nT3SYNC SOSCEN T3CKPS TMR3CS ]
-"6678
-[s S335 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S335 . . T3OSCEN T3CKPS0 T3CKPS1 TMR3CS0 TMR3CS1 ]
-"6669
-[u S333 `S334 1 `S335 1 ]
-[n S333 . . . ]
-"6687
-[v _T3CONbits `VS333 ~T0 @X0 0 e@1043 ]
-"6644
-[v _TMR3H `Vuc ~T0 @X0 0 e@1042 ]
-"6624
-[v _TMR3L `Vuc ~T0 @X0 0 e@1041 ]
-"1652
+"1652 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S83 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S83 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE TMR1GIE ]
 "1662
@@ -62,7 +25,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RF1 `Vb ~T0 @X0 0 e@5217 ]
 "9403
 [v _RF0 `Vb ~T0 @X0 0 e@5216 ]
-"1083
+"71 blynd.c
+[v _writeUART `(v ~T0 @X0 0 ef1`*uc ]
+"1083 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S60 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :2 `uc 1 ]
 [n S60 . TMR1ON . nT1SYNC SOSCEN T1CKPS TMR1CS ]
 "1091
@@ -91,34 +56,30 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TX1REG `Vuc ~T0 @X0 0 e@410 ]
 "3256
 [v _RC1REG `Vuc ~T0 @X0 0 e@409 ]
-"137 blynd.c
+"123 blynd.c
 [v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
-"135
+"121
 [v _TMR1_Initialize `(v ~T0 @X0 0 ef ]
-"134
+"120
 [v _TMR3_Initialize `(v ~T0 @X0 0 ef ]
 [p mainexit ]
 [v F3649 `(v ~T0 @X0 1 tf1`ul ]
-"153 C:\Program Files\Microchip\xc8\v1.45\include\pic.h
+"153 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic.h
 [v __delay `JF3649 ~T0 @X0 0 e ]
 [p i __delay ]
-"132 blynd.c
+"118 blynd.c
 [v _pin_manager `(v ~T0 @X0 0 ef ]
-"138
+"124
 [v _copy_frame `(v ~T0 @X0 0 ef2`i`i ]
-"131
+"117
 [v _ACTION `(v ~T0 @X0 0 ef7`uc`uc`uc`uc`uc`uc`uc ]
-"9417 C:\Program Files\Microchip\xc8\v1.45\include\pic16f1526.h
+"9417 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [v _RF7 `Vb ~T0 @X0 0 e@5223 ]
 "9413
 [v _RF5 `Vb ~T0 @X0 0 e@5221 ]
-"9409
-[v _RF3 `Vb ~T0 @X0 0 e@5219 ]
-"9407
-[v _RF2 `Vb ~T0 @X0 0 e@5218 ]
-"55 C:\Program Files\Microchip\xc8\v1.45\include\stdlib.h
+"55 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdlib.h
 [v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
-"3690 C:\Program Files\Microchip\xc8\v1.45\include\pic16f1526.h
+"3690 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [s S194 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S194 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
 "3689
@@ -148,6 +109,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _T3CON `Vuc ~T0 @X0 0 e@1043 ]
 "6742
 [v _T3GCON `Vuc ~T0 @X0 0 e@1044 ]
+"6644
+[v _TMR3H `Vuc ~T0 @X0 0 e@1042 ]
+"6624
+[v _TMR3L `Vuc ~T0 @X0 0 e@1041 ]
+"892
+[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S50 . TMR3IF TMR4IF TMR5IF TMR6IF CCP3IF CCP4IF CCP5IF CCP6IF ]
+"891
+[u S49 `S50 1 ]
+[n S49 . . ]
+"903
+[v _PIR3bits `VS49 ~T0 @X0 0 e@19 ]
+"1801
+[s S89 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S89 . TMR3IE TMR4IE TMR5IE TMR6IE CCP3IE CCP4IE CCP5IE CCP6IE ]
+"1800
+[u S88 `S89 1 ]
+[n S88 . . ]
+"1812
+[v _PIE3bits `VS88 ~T0 @X0 0 e@147 ]
 "6578
 [v _ANSELG `Vuc ~T0 @X0 0 e@1037 ]
 "7229
@@ -166,20 +147,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _WPUE `Vuc ~T0 @X0 0 e@528 ]
 "3025
 [v _ANSELE `Vuc ~T0 @X0 0 e@400 ]
-"1590
-[s S81 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S81 . TRISE0 TRISE1 TRISE2 TRISE3 TRISE4 TRISE5 TRISE6 TRISE7 ]
-"1589
-[u S80 `S81 1 ]
-[n S80 . . ]
-"1601
-[v _TRISEbits `VS80 ~T0 @X0 0 e@144 ]
 "4075
 [v _WPUD `Vuc ~T0 @X0 0 e@527 ]
 "2979
 [v _ANSELD `Vuc ~T0 @X0 0 e@399 ]
 "1522
 [v _TRISD `Vuc ~T0 @X0 0 e@143 ]
+"2921
+[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
+"4005
+[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
+"2868
+[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
 "1466
 [s S77 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S77 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
@@ -188,28 +167,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S76 . . ]
 "1477
 [v _TRISCbits `VS76 ~T0 @X0 0 e@142 ]
-"2921
-[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
-"1404
-[s S75 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S75 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"1403
-[u S74 `S75 1 ]
-[n S74 . . ]
-"1415
-[v _TRISBbits `VS74 ~T0 @X0 0 e@141 ]
-"4005
-[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
-"2868
-[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
-"1342
-[s S73 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S73 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
-"1341
-[u S72 `S73 1 ]
-[n S72 . . ]
-"1353
-[v _TRISAbits `VS72 ~T0 @X0 0 e@140 ]
 [; ;__size_t.h: 4: typedef unsigned size_t;
 [; ;stdarg.h: 7: typedef void * va_list[1];
 [; ;stdarg.h: 10: extern void * __va_start(void);
@@ -291,40 +248,40 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 101: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 102: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 104: extern char * ftoa(float f, int * status);
-"14 blynd.c
+"20 blynd.c
 [p x FOSC=HS ]
-"15
-[p x WDTE=OFF ]
-"16
-[p x PWRTE=OFF ]
-"17
-[p x MCLRE=OFF ]
-"18
-[p x CP=OFF ]
-"19
-[p x BOREN=OFF ]
-"20
-[p x CLKOUTEN=OFF ]
 "21
-[p x IESO=OFF ]
+[p x WDTE=OFF ]
 "22
-[p x FCMEN=OFF ]
+[p x PWRTE=OFF ]
+"23
+[p x MCLRE=OFF ]
+"24
+[p x CP=OFF ]
 "25
-[p x WRT=OFF ]
+[p x BOREN=OFF ]
 "26
-[p x VCAPEN=OFF ]
+[p x CLKOUTEN=OFF ]
 "27
-[p x STVREN=OFF ]
+[p x IESO=OFF ]
 "28
+[p x FCMEN=OFF ]
+"31
+[p x WRT=OFF ]
+"32
+[p x VCAPEN=OFF ]
+"33
+[p x STVREN=OFF ]
+"34
 [p x BORV=LO ]
-"29
+"35
 [p x LPBOR=OFF ]
-"30
+"36
 [p x LVP=OFF ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;pic16f1526.h: 50: extern volatile unsigned char INDF0 @ 0x000;
-"52 C:\Program Files\Microchip\xc8\v1.45\include\pic16f1526.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h
 [; ;pic16f1526.h: 52: asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
 [; ;pic16f1526.h: 55: typedef union {
@@ -3889,7 +3846,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-"53 blynd.c
+"55 blynd.c
 [v _curtFlag1 `i ~T0 @X0 1 e ]
 [i _curtFlag1
 -> 0 `i
@@ -3899,8 +3856,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `i
 ]
 [v _curtFlag `i ~T0 @X0 1 e ]
-[; ;blynd.c: 53: int curtFlag1=0, curtFlag2=0, curtFlag;
-"54
+[; ;blynd.c: 55: int curtFlag1=0, curtFlag2=0, curtFlag;
+"56
 [v _i `i ~T0 @X0 1 e ]
 [i _i
 -> 0 `i
@@ -3921,8 +3878,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _FAN_SPEED1
 -> 0 `i
 ]
-[; ;blynd.c: 54: int i=0,j=0,cnt=0,FAN_SPEED=0,FAN_SPEED1=0;
-"55
+[; ;blynd.c: 56: int i=0,j=0,cnt=0,FAN_SPEED=0,FAN_SPEED1=0;
+"57
 [v _FAN_FLAG `i ~T0 @X0 1 e ]
 [i _FAN_FLAG
 -> 0 `i
@@ -3931,8 +3888,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _TX_FLAG
 -> 0 `i
 ]
-[; ;blynd.c: 55: int FAN_FLAG=0, TX_FLAG=0;
-"56
+[; ;blynd.c: 57: int FAN_FLAG=0, TX_FLAG=0;
+"58
 [v _len2 `i ~T0 @X0 1 e ]
 [i _len2
 -> 0 `i
@@ -3941,8 +3898,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _len1
 -> 0 `i
 ]
-[; ;blynd.c: 56: int len2=0, len1=0;
-"57
+[; ;blynd.c: 58: int len2=0, len1=0;
+"59
 [v _sum `i ~T0 @X0 1 e ]
 [i _sum
 -> 0 `i
@@ -3951,16 +3908,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _man
 -> 1 `i
 ]
-[; ;blynd.c: 57: int sum=0, man=1;
-"59
+[; ;blynd.c: 59: int sum=0, man=1;
+"61
 [v _child_LOCK `ui ~T0 @X0 -> 32 `i e ]
 [i _child_LOCK
 :U ..
 -> :s 1C `ui
 ..
 ]
-[; ;blynd.c: 59: unsigned int child_LOCK[32]="00000000000000000000000000000000";
-"60
+[; ;blynd.c: 61: unsigned int child_LOCK[32]="00000000000000000000000000000000";
+"62
 [v _st `uc ~T0 @X0 -> 50 `i e ]
 [i _st
 :U ..
@@ -4008,8 +3965,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;blynd.c: 60: unsigned char st[50]="TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT";
-"61
+[; ;blynd.c: 62: unsigned char st[50]="TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT";
+"63
 [v _name `uc ~T0 @X0 -> 36 `i e ]
 [i _name
 :U ..
@@ -4017,8 +3974,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;blynd.c: 61: unsigned char name[36]="a";
-"62
+[; ;blynd.c: 63: unsigned char name[36]="a";
+"64
 [v _copy `uc ~T0 @X0 -> 36 `i e ]
 [i _copy
 :U ..
@@ -4026,8 +3983,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;blynd.c: 62: unsigned char copy[36]="$";
-"64
+[; ;blynd.c: 64: unsigned char copy[36]="$";
+"66
 [v _k `i ~T0 @X0 1 e ]
 [i _k
 -> 0 `i
@@ -4040,14 +3997,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _COPY_FLAG
 -> 0 `i
 ]
-[; ;blynd.c: 64: int k=0,sw=0,COPY_FLAG=0;
-"65
+[; ;blynd.c: 66: int k=0,sw=0,COPY_FLAG=0;
+"67
 [v _M1 `ui ~T0 @X0 1 e ]
-[; ;blynd.c: 65: unsigned int M1;unsigned int M2;unsigned int M3;unsigned int M4;
+[; ;blynd.c: 67: unsigned int M1;unsigned int M2;unsigned int M3;unsigned int M4;
 [v _M2 `ui ~T0 @X0 1 e ]
 [v _M3 `ui ~T0 @X0 1 e ]
 [v _M4 `ui ~T0 @X0 1 e ]
-"66
+"68
 [v _TimerCounter1 `i ~T0 @X0 1 e ]
 [i _TimerCounter1
 -> 0 `i
@@ -4056,283 +4013,223 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _TimerCounter2
 -> 0 `i
 ]
-[; ;blynd.c: 66: int TimerCounter1=0,TimerCounter2=0;
-[; ;blynd.c: 69: void writeUART(char *str2Write);
+[; ;blynd.c: 68: int TimerCounter1=0,TimerCounter2=0;
+[; ;blynd.c: 71: void writeUART(char *str2Write);
 [v $root$_isr `(v ~T0 @X0 0 e ]
 [v F3689 `(v ~T0 @X0 1 tf ]
-"70
+"72
 [v _isr `IF3689 ~T0 @X0 1 e ]
 {
-[; ;blynd.c: 70: interrupt void isr(){
+[; ;blynd.c: 72: interrupt void isr(){
 [e :U _isr ]
 [f ]
-[; ;blynd.c: 71: if(PIE3bits.TMR3IE==1 && PIR3bits.TMR3IF==1)
-"71
-[e $ ! && == -> . . _PIE3bits 0 0 `i -> 1 `i == -> . . _PIR3bits 0 0 `i -> 1 `i 465  ]
-[; ;blynd.c: 72: {
-"72
-{
-[; ;blynd.c: 73: PIR3bits.TMR3IF=0;
-"73
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 74: if(TimerCounter2>=224){
+[; ;blynd.c: 74: if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
 "74
-[e $ ! >= _TimerCounter2 -> 224 `i 466  ]
-{
-[; ;blynd.c: 75: RA3=0; RA2=0;
+[e $ ! && == -> . . _PIE1bits 0 0 `i -> 1 `i == -> . . _PIR1bits 0 0 `i -> 1 `i 465  ]
+[; ;blynd.c: 75: {
 "75
-[e = _RA3 -> -> 0 `i `b ]
-[e = _RA2 -> -> 0 `i `b ]
-[; ;blynd.c: 76: st[9]='G'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
+{
+[; ;blynd.c: 76: PIR1bits.TMR1IF=0;
 "76
-[e = *U + &U _st * -> -> -> 9 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
-[e = *U + &U _st * -> -> -> 10 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 11 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 12 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 51 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 9 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 77: T3CONbits.TMR3ON=0;
-"77
-[e = . . _T3CONbits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 78: st[13]='G'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-"78
-[e = *U + &U _st * -> -> -> 13 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
-[e = *U + &U _st * -> -> -> 14 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 15 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 16 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 52 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 13 `i `x -> -> # *U &U _st `i `x ]
-"79
-}
-[; ;blynd.c: 79: }
-[e $U 467  ]
-"80
-[e :U 466 ]
-[; ;blynd.c: 80: else if(curtFlag2){
-[e $ ! != _curtFlag2 -> 0 `i 468  ]
-{
-[; ;blynd.c: 81: TimerCounter2=TimerCounter2+1;
-"81
-[e = _TimerCounter2 + _TimerCounter2 -> 1 `i ]
-[; ;blynd.c: 82: TMR3H=0x0B; TMR3L=0xDC; T3CONbits.TMR3ON = 1;
-"82
-[e = _TMR3H -> -> 11 `i `uc ]
-[e = _TMR3L -> -> 220 `i `uc ]
-[e = . . _T3CONbits 0 0 -> -> 1 `i `uc ]
-"84
-}
-[e :U 468 ]
-"85
-[e :U 467 ]
-}
-[e :U 465 ]
-[; ;blynd.c: 84: }
-[; ;blynd.c: 85: }
-[; ;blynd.c: 88: if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
-"88
-[e $ ! && == -> . . _PIE1bits 0 0 `i -> 1 `i == -> . . _PIR1bits 0 0 `i -> 1 `i 469  ]
-[; ;blynd.c: 89: {
-"89
-{
-[; ;blynd.c: 90: PIR1bits.TMR1IF=0;
-"90
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 91: if(TimerCounter1>=125){
-"91
-[e $ ! >= _TimerCounter1 -> 125 `i 470  ]
+[; ;blynd.c: 77: if(TimerCounter1>=108){
+"77
+[e $ ! >= _TimerCounter1 -> 108 `i 466  ]
 {
-[; ;blynd.c: 92: RF1=0; RF0=0;
-"92
+[; ;blynd.c: 78: RF1=0; RF0=0;
+"78
 [e = _RF1 -> -> 0 `i `b ]
 [e = _RF0 -> -> 0 `i `b ]
-[; ;blynd.c: 93: st[1]='G'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
-"93
+[; ;blynd.c: 79: st[1]='G'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
+"79
 [e = *U + &U _st * -> -> -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
 [e = *U + &U _st * -> -> -> 2 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 3 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 4 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 1 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 94: T1CONbits.TMR1ON = 0;
-"94
+[; ;blynd.c: 80: T1CONbits.TMR1ON = 0;
+"80
 [e = . . _T1CONbits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 95: st[5]='G'; st[6]='0'; st[7]='0'; st[8]='2'; writeUART(st+5);
-"95
+[; ;blynd.c: 81: st[5]='G'; st[6]='0'; st[7]='0'; st[8]='2'; writeUART(st+5);
+"81
 [e = *U + &U _st * -> -> -> 5 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
 [e = *U + &U _st * -> -> -> 6 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 7 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 8 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 50 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 5 `i `x -> -> # *U &U _st `i `x ]
-"96
+"82
 }
-[; ;blynd.c: 96: }
-[e $U 471  ]
-"97
-[e :U 470 ]
-[; ;blynd.c: 97: else if(curtFlag1){
-[e $ ! != _curtFlag1 -> 0 `i 472  ]
+[; ;blynd.c: 82: }
+[e $U 467  ]
+"83
+[e :U 466 ]
+[; ;blynd.c: 83: else if(curtFlag1){
+[e $ ! != _curtFlag1 -> 0 `i 468  ]
 {
-[; ;blynd.c: 98: TimerCounter1=TimerCounter1+1;
-"98
+[; ;blynd.c: 84: TimerCounter1=TimerCounter1+1;
+"84
 [e = _TimerCounter1 + _TimerCounter1 -> 1 `i ]
-[; ;blynd.c: 99: TMR1H=0x0B; TMR1L=0xDC; T1CONbits.TMR1ON = 1;
-"99
+[; ;blynd.c: 85: TMR1H=0x0B; TMR1L=0xDC; T1CONbits.TMR1ON = 1;
+"85
 [e = _TMR1H -> -> 11 `i `uc ]
 [e = _TMR1L -> -> 220 `i `uc ]
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-"101
+"87
 }
-[e :U 472 ]
-"102
-[e :U 471 ]
+[e :U 468 ]
+"88
+[e :U 467 ]
 }
-[e :U 469 ]
-[; ;blynd.c: 101: }
-[; ;blynd.c: 102: }
-[; ;blynd.c: 105: if(RC1IF==1){
-"105
-[e $ ! == -> _RC1IF `i -> 1 `i 473  ]
+[e :U 465 ]
+[; ;blynd.c: 87: }
+[; ;blynd.c: 88: }
+[; ;blynd.c: 91: if(RC1IF==1){
+"91
+[e $ ! == -> _RC1IF `i -> 1 `i 469  ]
 {
-[; ;blynd.c: 106: if(RC1STAbits.OERR)
-"106
-[e $ ! != -> . . _RC1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 474  ]
-[; ;blynd.c: 107: {
-"107
+[; ;blynd.c: 92: if(RC1STAbits.OERR)
+"92
+[e $ ! != -> . . _RC1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 470  ]
+[; ;blynd.c: 93: {
+"93
 {
-[; ;blynd.c: 108: RC1STAbits.CREN = 0; RC1STAbits.CREN = 1;
-"108
+[; ;blynd.c: 94: RC1STAbits.CREN = 0; RC1STAbits.CREN = 1;
+"94
 [e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
 [e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
-[; ;blynd.c: 109: while(PIR1bits.TXIF==0); TX1REG='F'; while(PIR1bits.TXIF==0);
-"109
-[e $U 475  ]
-[e :U 476 ]
-[e :U 475 ]
-[e $ == -> . . _PIR1bits 1 2 `i -> 0 `i 476  ]
-[e :U 477 ]
+[; ;blynd.c: 95: while(PIR1bits.TXIF==0); TX1REG='F'; while(PIR1bits.TXIF==0);
+"95
+[e $U 471  ]
+[e :U 472 ]
+[e :U 471 ]
+[e $ == -> . . _PIR1bits 1 2 `i -> 0 `i 472  ]
+[e :U 473 ]
 [e = _TX1REG -> -> 70 `ui `uc ]
-[e $U 478  ]
-[e :U 479 ]
-[e :U 478 ]
-[e $ == -> . . _PIR1bits 1 2 `i -> 0 `i 479  ]
-[e :U 480 ]
-"110
-}
+[e $U 474  ]
+[e :U 475 ]
 [e :U 474 ]
-[; ;blynd.c: 110: }
-[; ;blynd.c: 111: name[i]=RC1REG;
-"111
+[e $ == -> . . _PIR1bits 1 2 `i -> 0 `i 475  ]
+[e :U 476 ]
+"96
+}
+[e :U 470 ]
+[; ;blynd.c: 96: }
+[; ;blynd.c: 97: name[i]=RC1REG;
+"97
 [e = *U + &U _name * -> -> _i `ui `ux -> -> # *U &U _name `ui `ux _RC1REG ]
-[; ;blynd.c: 113: if(name[0]=='%')
-"113
-[e $ ! == -> *U + &U _name * -> -> -> 0 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui 481  ]
-[; ;blynd.c: 114: {
-"114
+[; ;blynd.c: 99: if(name[0]=='%')
+"99
+[e $ ! == -> *U + &U _name * -> -> -> 0 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui 477  ]
+[; ;blynd.c: 100: {
+"100
 {
-[; ;blynd.c: 115: i++;
-"115
+[; ;blynd.c: 101: i++;
+"101
 [e ++ _i -> 1 `i ]
-[; ;blynd.c: 116: if(i>15)
-"116
-[e $ ! > _i -> 15 `i 482  ]
-[; ;blynd.c: 117: {
-"117
+[; ;blynd.c: 102: if(i>15)
+"102
+[e $ ! > _i -> 15 `i 478  ]
+[; ;blynd.c: 103: {
+"103
 {
-[; ;blynd.c: 118: i=0; TX_FLAG = 1; RC1IF=0;
-"118
+[; ;blynd.c: 104: i=0; TX_FLAG = 1; RC1IF=0;
+"104
 [e = _i -> 0 `i ]
 [e = _TX_FLAG -> 1 `i ]
 [e = _RC1IF -> -> 0 `i `b ]
-"119
+"105
 }
-[e :U 482 ]
-"120
+[e :U 478 ]
+"106
 }
-[; ;blynd.c: 119: }
-[; ;blynd.c: 120: }
-[e $U 483  ]
-"121
-[e :U 481 ]
-[; ;blynd.c: 121: else
-[; ;blynd.c: 122: {
-"122
+[; ;blynd.c: 105: }
+[; ;blynd.c: 106: }
+[e $U 479  ]
+"107
+[e :U 477 ]
+[; ;blynd.c: 107: else
+[; ;blynd.c: 108: {
+"108
 {
-[; ;blynd.c: 123: i=0; RC1STAbits.CREN = 0; RC1STAbits.CREN = 1;
-"123
+[; ;blynd.c: 109: i=0; RC1STAbits.CREN = 0; RC1STAbits.CREN = 1;
+"109
 [e = _i -> 0 `i ]
 [e = . . _RC1STAbits 0 4 -> -> 0 `i `uc ]
 [e = . . _RC1STAbits 0 4 -> -> 1 `i `uc ]
-[; ;blynd.c: 124: while(PIR1bits.TX1IF==0); TX1REG='F';
-"124
-[e $U 484  ]
-[e :U 485 ]
-[e :U 484 ]
-[e $ == -> . . _PIR1bits 0 4 `i -> 0 `i 485  ]
-[e :U 486 ]
+[; ;blynd.c: 110: while(PIR1bits.TX1IF==0); TX1REG='F';
+"110
+[e $U 480  ]
+[e :U 481 ]
+[e :U 480 ]
+[e $ == -> . . _PIR1bits 0 4 `i -> 0 `i 481  ]
+[e :U 482 ]
 [e = _TX1REG -> -> 70 `ui `uc ]
-[; ;blynd.c: 125: while(PIR1bits.TX1IF==0); TX1REG='R';
-"125
-[e $U 487  ]
-[e :U 488 ]
-[e :U 487 ]
-[e $ == -> . . _PIR1bits 0 4 `i -> 0 `i 488  ]
-[e :U 489 ]
-[e = _TX1REG -> -> 82 `ui `uc ]
-[; ;blynd.c: 126: while(PIR1bits.TX1IF==0); TX1REG='R';
-"126
-[e $U 490  ]
-[e :U 491 ]
-[e :U 490 ]
-[e $ == -> . . _PIR1bits 0 4 `i -> 0 `i 491  ]
-[e :U 492 ]
-[e = _TX1REG -> -> 82 `ui `uc ]
-"127
-}
+[; ;blynd.c: 111: while(PIR1bits.TX1IF==0); TX1REG='R';
+"111
+[e $U 483  ]
+[e :U 484 ]
 [e :U 483 ]
-"128
+[e $ == -> . . _PIR1bits 0 4 `i -> 0 `i 484  ]
+[e :U 485 ]
+[e = _TX1REG -> -> 82 `ui `uc ]
+[; ;blynd.c: 112: while(PIR1bits.TX1IF==0); TX1REG='R';
+"112
+[e $U 486  ]
+[e :U 487 ]
+[e :U 486 ]
+[e $ == -> . . _PIR1bits 0 4 `i -> 0 `i 487  ]
+[e :U 488 ]
+[e = _TX1REG -> -> 82 `ui `uc ]
+"113
 }
-[e :U 473 ]
-[; ;blynd.c: 127: }
-[; ;blynd.c: 128: }
-[; ;blynd.c: 129: }
-"129
+[e :U 479 ]
+"114
+}
+[e :U 469 ]
+[; ;blynd.c: 113: }
+[; ;blynd.c: 114: }
+[; ;blynd.c: 115: }
+"115
 [e :UE 464 ]
 }
-[; ;blynd.c: 131: void ACTION(char Switch_Num_10s, char Switch_Num_1s, char sw_status, char speed_bit1, char speed_bit2, char parent,char finalFrameStat);
-[; ;blynd.c: 132: void pin_manager();
-[; ;blynd.c: 134: void TMR3_Initialize();
-[; ;blynd.c: 135: void TMR1_Initialize();
-[; ;blynd.c: 137: void EUSART_Initialize();
-[; ;blynd.c: 138: void copy_frame(int start,int end);
-"141
+[; ;blynd.c: 117: void ACTION(char Switch_Num_10s, char Switch_Num_1s, char sw_status, char speed_bit1, char speed_bit2, char parent,char finalFrameStat);
+[; ;blynd.c: 118: void pin_manager();
+[; ;blynd.c: 120: void TMR3_Initialize();
+[; ;blynd.c: 121: void TMR1_Initialize();
+[; ;blynd.c: 123: void EUSART_Initialize();
+[; ;blynd.c: 124: void copy_frame(int start,int end);
+"127
 [v _periperal_init `(v ~T0 @X0 1 ef ]
 {
-[; ;blynd.c: 141: void periperal_init(){
+[; ;blynd.c: 127: void periperal_init(){
 [e :U _periperal_init ]
 [f ]
-[; ;blynd.c: 142: EUSART_Initialize();
-"142
+[; ;blynd.c: 128: EUSART_Initialize();
+"128
 [e ( _EUSART_Initialize ..  ]
-[; ;blynd.c: 143: TMR1_Initialize();
-"143
+[; ;blynd.c: 129: TMR1_Initialize();
+"129
 [e ( _TMR1_Initialize ..  ]
-[; ;blynd.c: 144: TMR3_Initialize();
-"144
+[; ;blynd.c: 130: TMR3_Initialize();
+"130
 [e ( _TMR3_Initialize ..  ]
-[; ;blynd.c: 145: }
-"145
-[e :UE 493 ]
+[; ;blynd.c: 131: }
+"131
+[e :UE 489 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"147
+"133
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;blynd.c: 147: void main() {
+[; ;blynd.c: 133: void main() {
 [e :U _main ]
 [f ]
-[; ;blynd.c: 148: _delay((unsigned long)((2000)*(16000000/4000.0)));
-"148
+[; ;blynd.c: 134: _delay((unsigned long)((2000)*(16000000/4000.0)));
+"134
 [e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"150
+"136
 [v _frame_start `ui ~T0 @X0 1 a ]
-[; ;blynd.c: 150: unsigned int frame_start = 0, frame_end = 0,cnt1=0,cnt2=0;
+[; ;blynd.c: 136: unsigned int frame_start = 0, frame_end = 0,cnt1=0,cnt2=0;
 [e = _frame_start -> -> 0 `i `ui ]
 [v _frame_end `ui ~T0 @X0 1 a ]
 [e = _frame_end -> -> 0 `i `ui ]
@@ -4340,9 +4237,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _cnt1 -> -> 0 `i `ui ]
 [v _cnt2 `ui ~T0 @X0 1 a ]
 [e = _cnt2 -> -> 0 `i `ui ]
-"152
+"138
 [v _RX_CHK_FLAG_start1 `i ~T0 @X0 1 a ]
-[; ;blynd.c: 152: int RX_CHK_FLAG_start1 = 0 ,RX_CHK_FLAG_start2 = 0, start_flag=0, RX_CHK_FLAG_end1 = 0, RX_CHK_FLAG_end2 = 0, end_flag=0;
+[; ;blynd.c: 138: int RX_CHK_FLAG_start1 = 0 ,RX_CHK_FLAG_start2 = 0, start_flag=0, RX_CHK_FLAG_end1 = 0, RX_CHK_FLAG_end2 = 0, end_flag=0;
 [e = _RX_CHK_FLAG_start1 -> 0 `i ]
 [v _RX_CHK_FLAG_start2 `i ~T0 @X0 1 a ]
 [e = _RX_CHK_FLAG_start2 -> 0 `i ]
@@ -4354,659 +4251,481 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _RX_CHK_FLAG_end2 -> 0 `i ]
 [v _end_flag `i ~T0 @X0 1 a ]
 [e = _end_flag -> 0 `i ]
-[; ;blynd.c: 154: pin_manager();
-"154
+[; ;blynd.c: 140: pin_manager();
+"140
 [e ( _pin_manager ..  ]
-[; ;blynd.c: 155: periperal_init();
-"155
+[; ;blynd.c: 141: periperal_init();
+"141
 [e ( _periperal_init ..  ]
-[; ;blynd.c: 157: RF1 = 0; RF0 = 0; RA3 = 0; RA2 = 0;
-"157
+[; ;blynd.c: 143: RF1 = 0; RF0 = 0;
+"143
 [e = _RF1 -> -> 0 `i `b ]
 [e = _RF0 -> -> 0 `i `b ]
-[e = _RA3 -> -> 0 `i `b ]
-[e = _RA2 -> -> 0 `i `b ]
-[; ;blynd.c: 158: M1=1; M2=1; M3=1; M4=1;
-"158
+[; ;blynd.c: 144: M1=1; M2=1; M3=1; M4=1;
+"144
 [e = _M1 -> -> 1 `i `ui ]
 [e = _M2 -> -> 1 `i `ui ]
 [e = _M3 -> -> 1 `i `ui ]
 [e = _M4 -> -> 1 `i `ui ]
-[; ;blynd.c: 159: st[0]='%'; st[10]='@';
-"159
+[; ;blynd.c: 145: st[0]='%'; st[10]='@';
+"145
 [e = *U + &U _st * -> -> -> 0 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 37 `ui `uc ]
 [e = *U + &U _st * -> -> -> 10 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 64 `ui `uc ]
-[; ;blynd.c: 161: while(1){
-"161
-[e :U 496 ]
+[; ;blynd.c: 147: while(1){
+"147
+[e :U 492 ]
 {
-[; ;blynd.c: 162: if(TX_FLAG==1)
-"162
-[e $ ! == _TX_FLAG -> 1 `i 498  ]
-[; ;blynd.c: 163: {
-"163
+[; ;blynd.c: 148: if(TX_FLAG==1)
+"148
+[e $ ! == _TX_FLAG -> 1 `i 494  ]
+[; ;blynd.c: 149: {
+"149
 {
-[; ;blynd.c: 165: TX_FLAG=0;
-"165
+[; ;blynd.c: 151: TX_FLAG=0;
+"151
 [e = _TX_FLAG -> 0 `i ]
-[; ;blynd.c: 166: start_flag = 0;
-"166
+[; ;blynd.c: 152: start_flag = 0;
+"152
 [e = _start_flag -> 0 `i ]
-[; ;blynd.c: 167: end_flag = 0;
-"167
+[; ;blynd.c: 153: end_flag = 0;
+"153
 [e = _end_flag -> 0 `i ]
-[; ;blynd.c: 169: if(name[0]=='%' && name[1]=='%' && name[14]=='@' && name[15]=='@')
-"169
-[e $ ! && && && == -> *U + &U _name * -> -> -> 0 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> -> 14 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == -> *U + &U _name * -> -> -> 15 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui 499  ]
-[; ;blynd.c: 170: {
-"170
+[; ;blynd.c: 155: if(name[0]=='%' && name[1]=='%' && name[14]=='@' && name[15]=='@')
+"155
+[e $ ! && && && == -> *U + &U _name * -> -> -> 0 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> -> 14 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == -> *U + &U _name * -> -> -> 15 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui 495  ]
+[; ;blynd.c: 156: {
+"156
 {
-[; ;blynd.c: 171: for(k=0;k<16;k++)
-"171
+[; ;blynd.c: 157: for(k=0;k<16;k++)
+"157
 {
 [e = _k -> 0 `i ]
-[e $ < _k -> 16 `i 500  ]
-[e $U 501  ]
-"172
-[e :U 500 ]
-[; ;blynd.c: 172: {
+[e $ < _k -> 16 `i 496  ]
+[e $U 497  ]
+"158
+[e :U 496 ]
+[; ;blynd.c: 158: {
 {
-[; ;blynd.c: 173: if(name[k] == '%' && name[k+1] == '%' && start_flag == 0)
-"173
-[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == _start_flag -> 0 `i 503  ]
-[; ;blynd.c: 174: {
-"174
+[; ;blynd.c: 159: if(name[k] == '%' && name[k+1] == '%' && start_flag == 0)
+"159
+[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == _start_flag -> 0 `i 499  ]
+[; ;blynd.c: 160: {
+"160
 {
-[; ;blynd.c: 175: RX_CHK_FLAG_start1 = k;
-"175
+[; ;blynd.c: 161: RX_CHK_FLAG_start1 = k;
+"161
 [e = _RX_CHK_FLAG_start1 _k ]
-[; ;blynd.c: 176: start_flag = 1;
-"176
+[; ;blynd.c: 162: start_flag = 1;
+"162
 [e = _start_flag -> 1 `i ]
-"177
+"163
 }
-[; ;blynd.c: 177: }
-[e $U 504  ]
-"178
-[e :U 503 ]
-[; ;blynd.c: 178: else if(name[k] == '%' && name[k+1] == '%' && start_flag == 1)
-[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == _start_flag -> 1 `i 505  ]
-[; ;blynd.c: 179: {
-"179
+[; ;blynd.c: 163: }
+[e $U 500  ]
+"164
+[e :U 499 ]
+[; ;blynd.c: 164: else if(name[k] == '%' && name[k+1] == '%' && start_flag == 1)
+[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 37 `ui == _start_flag -> 1 `i 501  ]
+[; ;blynd.c: 165: {
+"165
 {
-[; ;blynd.c: 180: RX_CHK_FLAG_start2 = k;
-"180
+[; ;blynd.c: 166: RX_CHK_FLAG_start2 = k;
+"166
 [e = _RX_CHK_FLAG_start2 _k ]
+"167
+}
+[; ;blynd.c: 167: }
+[e $U 502  ]
+"168
+[e :U 501 ]
+[; ;blynd.c: 168: else if(name[k] == '@' && name[k+1] == '@' && end_flag == 0)
+[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == _end_flag -> 0 `i 503  ]
+[; ;blynd.c: 169: {
+"169
+{
+[; ;blynd.c: 170: RX_CHK_FLAG_end1 = k;
+"170
+[e = _RX_CHK_FLAG_end1 _k ]
+[; ;blynd.c: 171: end_flag = 1;
+"171
+[e = _end_flag -> 1 `i ]
+[; ;blynd.c: 172: COPY_FLAG=1;
+"172
+[e = _COPY_FLAG -> 1 `i ]
+[; ;blynd.c: 173: break;
+"173
+[e $U 497  ]
+"174
+}
+[; ;blynd.c: 174: }
+[e $U 504  ]
+"175
+[e :U 503 ]
+[; ;blynd.c: 175: else if(name[k] == '@' && name[k+1] == '@' && end_flag == 1)
+[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == _end_flag -> 1 `i 505  ]
+[; ;blynd.c: 176: {
+"176
+{
+[; ;blynd.c: 177: RX_CHK_FLAG_end2 = k;
+"177
+[e = _RX_CHK_FLAG_end2 _k ]
+[; ;blynd.c: 178: COPY_FLAG=2;
+"178
+[e = _COPY_FLAG -> 2 `i ]
+[; ;blynd.c: 179: break;
+"179
+[e $U 497  ]
+"180
+}
+[e :U 505 ]
+"181
+[e :U 504 ]
+[e :U 502 ]
+[e :U 500 ]
+}
+"157
+[e ++ _k -> 1 `i ]
+[e $ < _k -> 16 `i 496  ]
+[e :U 497 ]
 "181
 }
-[; ;blynd.c: 181: }
-[e $U 506  ]
 "182
-[e :U 505 ]
-[; ;blynd.c: 182: else if(name[k] == '@' && name[k+1] == '@' && end_flag == 0)
-[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == _end_flag -> 0 `i 507  ]
-[; ;blynd.c: 183: {
+}
+[; ;blynd.c: 180: }
+[; ;blynd.c: 181: }
+[; ;blynd.c: 182: }
+[e $U 506  ]
 "183
-{
-[; ;blynd.c: 184: RX_CHK_FLAG_end1 = k;
+[e :U 495 ]
+[; ;blynd.c: 183: else
+[; ;blynd.c: 184: {
 "184
-[e = _RX_CHK_FLAG_end1 _k ]
-[; ;blynd.c: 185: end_flag = 1;
+{
+[; ;blynd.c: 185: _delay((unsigned long)((10)*(16000000/4000.0))); TX1REG='P'; _delay((unsigned long)((1)*(16000000/4000.0))); TX1REG='K'; _delay((unsigned long)((1)*(16000000/4000.0)));
 "185
-[e = _end_flag -> 1 `i ]
-[; ;blynd.c: 186: COPY_FLAG=1;
-"186
-[e = _COPY_FLAG -> 1 `i ]
-[; ;blynd.c: 187: break;
-"187
-[e $U 501  ]
-"188
-}
-[; ;blynd.c: 188: }
-[e $U 508  ]
-"189
-[e :U 507 ]
-[; ;blynd.c: 189: else if(name[k] == '@' && name[k+1] == '@' && end_flag == 1)
-[e $ ! && && == -> *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == -> *U + &U _name * -> -> + _k -> 1 `i `ui `ux -> -> # *U &U _name `ui `ux `ui -> 64 `ui == _end_flag -> 1 `i 509  ]
-[; ;blynd.c: 190: {
-"190
-{
-[; ;blynd.c: 191: RX_CHK_FLAG_end2 = k;
-"191
-[e = _RX_CHK_FLAG_end2 _k ]
-[; ;blynd.c: 192: COPY_FLAG=2;
-"192
-[e = _COPY_FLAG -> 2 `i ]
-[; ;blynd.c: 193: break;
-"193
-[e $U 501  ]
-"194
-}
-[e :U 509 ]
-"195
-[e :U 508 ]
-[e :U 506 ]
-[e :U 504 ]
-}
-"171
-[e ++ _k -> 1 `i ]
-[e $ < _k -> 16 `i 500  ]
-[e :U 501 ]
-"195
-}
-"196
-}
-[; ;blynd.c: 194: }
-[; ;blynd.c: 195: }
-[; ;blynd.c: 196: }
-[e $U 510  ]
-"197
-[e :U 499 ]
-[; ;blynd.c: 197: else
-[; ;blynd.c: 198: {
-"198
-{
-[; ;blynd.c: 199: _delay((unsigned long)((10)*(16000000/4000.0))); TX1REG='P'; _delay((unsigned long)((1)*(16000000/4000.0))); TX1REG='K'; _delay((unsigned long)((1)*(16000000/4000.0)));
-"199
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 [e = _TX1REG -> -> 80 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 [e = _TX1REG -> -> 75 `ui `uc ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;blynd.c: 200: i=0;
-"200
+[; ;blynd.c: 186: i=0;
+"186
 [e = _i -> 0 `i ]
-[; ;blynd.c: 201: RC1STAbits.SPEN=0; RC1STAbits.SPEN=1;
-"201
+[; ;blynd.c: 187: RC1STAbits.SPEN=0; RC1STAbits.SPEN=1;
+"187
 [e = . . _RC1STAbits 0 7 -> -> 0 `i `uc ]
 [e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
-[; ;blynd.c: 202: sw=0;
-"202
+[; ;blynd.c: 188: sw=0;
+"188
 [e = _sw -> 0 `i ]
-[; ;blynd.c: 203: for(k = 0; k< 15; k++)
-"203
+[; ;blynd.c: 189: for(k = 0; k< 15; k++)
+"189
 {
 [e = _k -> 0 `i ]
-[e $ < _k -> 15 `i 511  ]
-[e $U 512  ]
-"204
-[e :U 511 ]
-[; ;blynd.c: 204: {
+[e $ < _k -> 15 `i 507  ]
+[e $U 508  ]
+"190
+[e :U 507 ]
+[; ;blynd.c: 190: {
 {
-[; ;blynd.c: 205: name[k] = '#';
-"205
+[; ;blynd.c: 191: name[k] = '#';
+"191
 [e = *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux -> -> 35 `ui `uc ]
-"206
+"192
 }
-"203
+"189
 [e ++ _k -> 1 `i ]
-[e $ < _k -> 15 `i 511  ]
-[e :U 512 ]
-"206
+[e $ < _k -> 15 `i 507  ]
+[e :U 508 ]
+"192
 }
-[; ;blynd.c: 206: }
-[; ;blynd.c: 207: COPY_FLAG=0;
-"207
+[; ;blynd.c: 192: }
+[; ;blynd.c: 193: COPY_FLAG=0;
+"193
 [e = _COPY_FLAG -> 0 `i ]
-"208
+"194
 }
-[e :U 510 ]
-[; ;blynd.c: 208: }
-[; ;blynd.c: 211: if(COPY_FLAG==1)
-"211
-[e $ ! == _COPY_FLAG -> 1 `i 514  ]
-[; ;blynd.c: 212: {
-"212
+[e :U 506 ]
+[; ;blynd.c: 194: }
+[; ;blynd.c: 197: if(COPY_FLAG==1)
+"197
+[e $ ! == _COPY_FLAG -> 1 `i 510  ]
+[; ;blynd.c: 198: {
+"198
 {
-[; ;blynd.c: 213: copy_frame(RX_CHK_FLAG_start1,RX_CHK_FLAG_end1);
-"213
+[; ;blynd.c: 199: copy_frame(RX_CHK_FLAG_start1,RX_CHK_FLAG_end1);
+"199
 [e ( _copy_frame (2 , _RX_CHK_FLAG_start1 _RX_CHK_FLAG_end1 ]
-[; ;blynd.c: 216: ACTION(copy[2], copy[3], copy[4], copy[5], copy[6], copy[7],copy[8]);
-"216
+[; ;blynd.c: 202: ACTION(copy[2], copy[3], copy[4], copy[5], copy[6], copy[7],copy[8]);
+"202
 [e ( _ACTION (4 , , , , , , *U + &U _copy * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy `ui `ux ]
-"217
+"203
 }
-[; ;blynd.c: 217: }
-[e $U 515  ]
+[; ;blynd.c: 203: }
+[e $U 511  ]
+"204
+[e :U 510 ]
+[; ;blynd.c: 204: else if(COPY_FLAG==2)
+[e $ ! == _COPY_FLAG -> 2 `i 512  ]
+[; ;blynd.c: 205: {
+"205
+{
+[; ;blynd.c: 206: copy_frame(RX_CHK_FLAG_start2,RX_CHK_FLAG_end2);
+"206
+[e ( _copy_frame (2 , _RX_CHK_FLAG_start2 _RX_CHK_FLAG_end2 ]
+[; ;blynd.c: 207: ACTION(copy[2], copy[3], copy[4], copy[5], copy[6], copy[7],copy[8]);
+"207
+[e ( _ACTION (4 , , , , , , *U + &U _copy * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy `ui `ux ]
+"209
+}
+[e :U 512 ]
+"211
+[e :U 511 ]
+}
+[e :U 494 ]
+[; ;blynd.c: 209: }
+[; ;blynd.c: 211: }
+[; ;blynd.c: 216: if(child_LOCK[1]==0 && RF7==0 && M1==0)
+"216
+[e $ ! && && == *U + &U _child_LOCK * -> -> -> 1 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF7 `i -> 0 `i == _M1 -> -> 0 `i `ui 513  ]
+[; ;blynd.c: 217: {
+"217
+{
+[; ;blynd.c: 218: if(man==1)
 "218
-[e :U 514 ]
-[; ;blynd.c: 218: else if(COPY_FLAG==2)
-[e $ ! == _COPY_FLAG -> 2 `i 516  ]
+[e $ ! == _man -> 1 `i 514  ]
 [; ;blynd.c: 219: {
 "219
 {
-[; ;blynd.c: 220: copy_frame(RX_CHK_FLAG_start2,RX_CHK_FLAG_end2);
+[; ;blynd.c: 220: st[1]='R'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
 "220
-[e ( _copy_frame (2 , _RX_CHK_FLAG_start2 _RX_CHK_FLAG_end2 ]
-[; ;blynd.c: 221: ACTION(copy[2], copy[3], copy[4], copy[5], copy[6], copy[7],copy[8]);
-"221
-[e ( _ACTION (4 , , , , , , *U + &U _copy * -> -> -> 2 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 3 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 4 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 5 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 6 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 7 `i `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _copy * -> -> -> 8 `i `ui `ux -> -> # *U &U _copy `ui `ux ]
-"223
-}
-[e :U 516 ]
-"225
-[e :U 515 ]
-}
-[e :U 498 ]
-[; ;blynd.c: 223: }
-[; ;blynd.c: 225: }
-[; ;blynd.c: 230: if(child_LOCK[1]==0 && RF7==0 && M1==0)
-"230
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 1 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF7 `i -> 0 `i == _M1 -> -> 0 `i `ui 517  ]
-[; ;blynd.c: 231: {
-"231
-{
-[; ;blynd.c: 232: if(man==1)
-"232
-[e $ ! == _man -> 1 `i 518  ]
-[; ;blynd.c: 233: {
-"233
-{
-[; ;blynd.c: 234: st[1]='R'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
-"234
 [e = *U + &U _st * -> -> -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
 [e = *U + &U _st * -> -> -> 2 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 3 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 4 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 1 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 235: RF0=0; RF1=0; curtFlag1=0; TimerCounter1=0;
-"235
+[; ;blynd.c: 221: RF0=0; RF1=0; curtFlag1=0; TimerCounter1=0;
+"221
 [e = _RF0 -> -> 0 `i `b ]
 [e = _RF1 -> -> 0 `i `b ]
 [e = _curtFlag1 -> 0 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-"236
+"222
 }
-[e :U 518 ]
-[; ;blynd.c: 236: }
-[; ;blynd.c: 237: M1=1; man=1;
-"237
+[e :U 514 ]
+[; ;blynd.c: 222: }
+[; ;blynd.c: 223: M1=1; man=1;
+"223
 [e = _M1 -> -> 1 `i `ui ]
 [e = _man -> 1 `i ]
-"238
+"224
 }
-[e :U 517 ]
-[; ;blynd.c: 238: }
-[; ;blynd.c: 240: if(child_LOCK[1]==0 && RF7==1 && M1==1)
-"240
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 1 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF7 `i -> 1 `i == _M1 -> -> 1 `i `ui 519  ]
-[; ;blynd.c: 241: {
-"241
+[e :U 513 ]
+[; ;blynd.c: 224: }
+[; ;blynd.c: 226: if(child_LOCK[1]==0 && RF7==1 && M1==1)
+"226
+[e $ ! && && == *U + &U _child_LOCK * -> -> -> 1 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF7 `i -> 1 `i == _M1 -> -> 1 `i `ui 515  ]
+[; ;blynd.c: 227: {
+"227
 {
-[; ;blynd.c: 242: if(man==1)
-"242
-[e $ ! == _man -> 1 `i 520  ]
-[; ;blynd.c: 243: {
-"243
+[; ;blynd.c: 228: if(man==1)
+"228
+[e $ ! == _man -> 1 `i 516  ]
+[; ;blynd.c: 229: {
+"229
 {
-[; ;blynd.c: 244: st[5]='R'; st[6]='0'; st[7]='0'; st[8]='2'; writeUART(st+5);
-"244
+[; ;blynd.c: 230: st[5]='R'; st[6]='0'; st[7]='0'; st[8]='2'; writeUART(st+5);
+"230
 [e = *U + &U _st * -> -> -> 5 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
 [e = *U + &U _st * -> -> -> 6 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 7 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 8 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 50 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 5 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 245: RF0=0;
-"245
+[; ;blynd.c: 231: RF0=0;
+"231
 [e = _RF0 -> -> 0 `i `b ]
-[; ;blynd.c: 246: st[1]='R'; st[2]='1'; st[3]='0'; st[4]='1'; writeUART(st+1);
-"246
+[; ;blynd.c: 232: st[1]='R'; st[2]='1'; st[3]='0'; st[4]='1'; writeUART(st+1);
+"232
 [e = *U + &U _st * -> -> -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
 [e = *U + &U _st * -> -> -> 2 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e = *U + &U _st * -> -> -> 3 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 4 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 1 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 247: RF1=1; curtFlag1=1; TimerCounter1=0;
-"247
+[; ;blynd.c: 233: RF1=1; curtFlag1=1; TimerCounter1=0;
+"233
 [e = _RF1 -> -> 1 `i `b ]
 [e = _curtFlag1 -> 1 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-[; ;blynd.c: 248: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
-"248
+[; ;blynd.c: 234: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
+"234
 [e = _TMR1H -> -> 11 `i `uc ]
 [e = _TMR1L -> -> 220 `i `uc ]
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-"249
+"235
 }
-[e :U 520 ]
-[; ;blynd.c: 249: }
-[; ;blynd.c: 250: M1=0; man=1;
-"250
+[e :U 516 ]
+[; ;blynd.c: 235: }
+[; ;blynd.c: 236: M1=0; man=1;
+"236
 [e = _M1 -> -> 0 `i `ui ]
 [e = _man -> 1 `i ]
-"251
+"237
 }
-[e :U 519 ]
-[; ;blynd.c: 251: }
-[; ;blynd.c: 253: if(child_LOCK[3]==0 && RF5==0 && M2==0)
-"253
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 3 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF5 `i -> 0 `i == _M2 -> -> 0 `i `ui 521  ]
-[; ;blynd.c: 254: {
-"254
+[e :U 515 ]
+[; ;blynd.c: 237: }
+[; ;blynd.c: 240: if(child_LOCK[3]==0 && RF5==0 && M2==0)
+"240
+[e $ ! && && == *U + &U _child_LOCK * -> -> -> 3 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF5 `i -> 0 `i == _M2 -> -> 0 `i `ui 517  ]
+[; ;blynd.c: 241: {
+"241
 {
-[; ;blynd.c: 255: if(man==1){
-"255
-[e $ ! == _man -> 1 `i 522  ]
+[; ;blynd.c: 242: if(man==1){
+"242
+[e $ ! == _man -> 1 `i 518  ]
 {
-[; ;blynd.c: 256: st[5]='R'; st[6]='0'; st[7]='0'; st[8]='2';
-"256
+[; ;blynd.c: 243: st[5]='R'; st[6]='0'; st[7]='0'; st[8]='2';
+"243
 [e = *U + &U _st * -> -> -> 5 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
 [e = *U + &U _st * -> -> -> 6 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 7 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 8 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 50 `ui `uc ]
-[; ;blynd.c: 257: writeUART(st+5);
-"257
+[; ;blynd.c: 244: writeUART(st+5);
+"244
 [e ( _writeUART (1 + &U _st * -> -> 5 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 258: RF0=0; RF1=0; curtFlag1=0; TimerCounter1=0;
-"258
+[; ;blynd.c: 245: RF0=0; RF1=0; curtFlag1=0; TimerCounter1=0;
+"245
 [e = _RF0 -> -> 0 `i `b ]
 [e = _RF1 -> -> 0 `i `b ]
 [e = _curtFlag1 -> 0 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-"259
+"246
 }
-[e :U 522 ]
-[; ;blynd.c: 259: }
-[; ;blynd.c: 260: M2=1; man=1;
-"260
+[e :U 518 ]
+[; ;blynd.c: 246: }
+[; ;blynd.c: 247: M2=1; man=1;
+"247
 [e = _M2 -> -> 1 `i `ui ]
 [e = _man -> 1 `i ]
-"261
+"248
 }
-[e :U 521 ]
-[; ;blynd.c: 261: }
-[; ;blynd.c: 263: if(child_LOCK[3]==0 && RF5==1 && M2==1)
-"263
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 3 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF5 `i -> 1 `i == _M2 -> -> 1 `i `ui 523  ]
-[; ;blynd.c: 264: {
-"264
+[e :U 517 ]
+[; ;blynd.c: 248: }
+[; ;blynd.c: 250: if(child_LOCK[3]==0 && RF5==1 && M2==1)
+"250
+[e $ ! && && == *U + &U _child_LOCK * -> -> -> 3 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF5 `i -> 1 `i == _M2 -> -> 1 `i `ui 519  ]
+[; ;blynd.c: 251: {
+"251
 {
-[; ;blynd.c: 265: if(man==1){
-"265
-[e $ ! == _man -> 1 `i 524  ]
+[; ;blynd.c: 252: if(man==1){
+"252
+[e $ ! == _man -> 1 `i 520  ]
 {
-[; ;blynd.c: 266: st[1]='R'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
-"266
+[; ;blynd.c: 253: st[1]='R'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
+"253
 [e = *U + &U _st * -> -> -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
 [e = *U + &U _st * -> -> -> 2 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 3 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 4 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 1 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 267: RF1=0;
-"267
+[; ;blynd.c: 254: RF1=0;
+"254
 [e = _RF1 -> -> 0 `i `b ]
-[; ;blynd.c: 268: st[5]='R'; st[6]='1'; st[7]='0'; st[8]='2'; writeUART(st+5);
-"268
+[; ;blynd.c: 255: st[5]='R'; st[6]='1'; st[7]='0'; st[8]='2'; writeUART(st+5);
+"255
 [e = *U + &U _st * -> -> -> 5 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
 [e = *U + &U _st * -> -> -> 6 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e = *U + &U _st * -> -> -> 7 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 8 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 50 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 5 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 269: RF0=1; curtFlag1=1; TimerCounter1=0;
-"269
+[; ;blynd.c: 256: RF0=1; curtFlag1=1; TimerCounter1=0;
+"256
 [e = _RF0 -> -> 1 `i `b ]
 [e = _curtFlag1 -> 1 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-[; ;blynd.c: 270: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
-"270
+[; ;blynd.c: 257: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
+"257
 [e = _TMR1H -> -> 11 `i `uc ]
 [e = _TMR1L -> -> 220 `i `uc ]
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-"271
+"258
 }
-[e :U 524 ]
-[; ;blynd.c: 271: }
-[; ;blynd.c: 272: M2=0; man=1;
-"272
+[e :U 520 ]
+[; ;blynd.c: 258: }
+[; ;blynd.c: 259: M2=0; man=1;
+"259
 [e = _M2 -> -> 0 `i `ui ]
 [e = _man -> 1 `i ]
-"273
+"260
 }
-[e :U 523 ]
-[; ;blynd.c: 273: }
-[; ;blynd.c: 276: if(child_LOCK[5]==0 && RF3==0 && M3==0)
-"276
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 5 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF3 `i -> 0 `i == _M3 -> -> 0 `i `ui 525  ]
-[; ;blynd.c: 277: {
-"277
-{
-[; ;blynd.c: 278: if(man==1)
-"278
-[e $ ! == _man -> 1 `i 526  ]
-[; ;blynd.c: 279: {
-"279
-{
-[; ;blynd.c: 280: st[9]='R'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-"280
-[e = *U + &U _st * -> -> -> 9 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
-[e = *U + &U _st * -> -> -> 10 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 11 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 12 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 51 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 9 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 281: RA2=0; RA3=0; curtFlag2=0; TimerCounter2=0;
-"281
-[e = _RA2 -> -> 0 `i `b ]
-[e = _RA3 -> -> 0 `i `b ]
-[e = _curtFlag2 -> 0 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-"282
+[e :U 519 ]
+"262
 }
-[e :U 526 ]
-[; ;blynd.c: 282: }
-[; ;blynd.c: 283: M3=1; man=1;
-"283
-[e = _M3 -> -> 1 `i `ui ]
-[e = _man -> 1 `i ]
-"284
+[e :U 491 ]
+"147
+[e $U 492  ]
+[e :U 493 ]
+[; ;blynd.c: 260: }
+[; ;blynd.c: 262: }
+[; ;blynd.c: 264: }
+"264
+[e :UE 490 ]
 }
-[e :U 525 ]
-[; ;blynd.c: 284: }
-[; ;blynd.c: 286: if(child_LOCK[5]==0 && RF3==1 && M3==1)
-"286
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 5 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF3 `i -> 1 `i == _M3 -> -> 1 `i `ui 527  ]
-[; ;blynd.c: 287: {
-"287
-{
-[; ;blynd.c: 288: if(man==1)
-"288
-[e $ ! == _man -> 1 `i 528  ]
-[; ;blynd.c: 289: {
-"289
-{
-[; ;blynd.c: 290: st[13]='R'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-"290
-[e = *U + &U _st * -> -> -> 13 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
-[e = *U + &U _st * -> -> -> 14 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 15 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 16 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 52 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 13 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 291: RA2=0;
-"291
-[e = _RA2 -> -> 0 `i `b ]
-[; ;blynd.c: 292: st[9]='R'; st[10]='1'; st[11]='0'; st[12]='3'; writeUART(st+9);
-"292
-[e = *U + &U _st * -> -> -> 9 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
-[e = *U + &U _st * -> -> -> 10 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
-[e = *U + &U _st * -> -> -> 11 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 12 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 51 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 9 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 293: RA3=1; curtFlag2=1; TimerCounter2=0;
-"293
-[e = _RA3 -> -> 1 `i `b ]
-[e = _curtFlag2 -> 1 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-[; ;blynd.c: 294: TMR3H=0x0B; TMR3L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-"294
-[e = _TMR3H -> -> 11 `i `uc ]
-[e = _TMR3L -> -> 220 `i `uc ]
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[e = . . _T3CONbits 0 0 -> -> 1 `i `uc ]
-"295
-}
-[e :U 528 ]
-[; ;blynd.c: 295: }
-[; ;blynd.c: 296: M3=0; man=1;
-"296
-[e = _M3 -> -> 0 `i `ui ]
-[e = _man -> 1 `i ]
-"297
-}
-[e :U 527 ]
-[; ;blynd.c: 297: }
-[; ;blynd.c: 300: if(child_LOCK[7]==0 && RF2==0 && M4==0)
-"300
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 7 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF2 `i -> 0 `i == _M4 -> -> 0 `i `ui 529  ]
-[; ;blynd.c: 301: {
-"301
-{
-[; ;blynd.c: 302: if(man==1){
-"302
-[e $ ! == _man -> 1 `i 530  ]
-{
-[; ;blynd.c: 303: st[13]='R'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-"303
-[e = *U + &U _st * -> -> -> 13 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
-[e = *U + &U _st * -> -> -> 14 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 15 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 16 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 52 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 13 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 304: RA2=0; RA3=0; curtFlag2=0; TimerCounter2=0;
-"304
-[e = _RA2 -> -> 0 `i `b ]
-[e = _RA3 -> -> 0 `i `b ]
-[e = _curtFlag2 -> 0 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-"305
-}
-[e :U 530 ]
-[; ;blynd.c: 305: }
-[; ;blynd.c: 306: M4=1; man=1;
-"306
-[e = _M4 -> -> 1 `i `ui ]
-[e = _man -> 1 `i ]
-"307
-}
-[e :U 529 ]
-[; ;blynd.c: 307: }
-[; ;blynd.c: 309: if(child_LOCK[7]==0 && RF2==1 && M4==1)
-"309
-[e $ ! && && == *U + &U _child_LOCK * -> -> -> 7 `i `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> -> 0 `i `ui == -> _RF2 `i -> 1 `i == _M4 -> -> 1 `i `ui 531  ]
-[; ;blynd.c: 310: {
-"310
-{
-[; ;blynd.c: 311: if(man==1)
-"311
-[e $ ! == _man -> 1 `i 532  ]
-[; ;blynd.c: 312: {
-"312
-{
-[; ;blynd.c: 313: st[9]='R'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-"313
-[e = *U + &U _st * -> -> -> 9 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
-[e = *U + &U _st * -> -> -> 10 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 11 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 12 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 51 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 9 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 314: RA3=0;
-"314
-[e = _RA3 -> -> 0 `i `b ]
-[; ;blynd.c: 315: st[13]='R'; st[14]='1'; st[15]='0'; st[16]='4'; writeUART(st+13);
-"315
-[e = *U + &U _st * -> -> -> 13 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 82 `ui `uc ]
-[e = *U + &U _st * -> -> -> 14 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
-[e = *U + &U _st * -> -> -> 15 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 16 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 52 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 13 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 316: RA2=1; curtFlag2=1; TimerCounter2=0;
-"316
-[e = _RA2 -> -> 1 `i `b ]
-[e = _curtFlag2 -> 1 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-[; ;blynd.c: 317: TMR1H=0x0B; TMR1L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-"317
-[e = _TMR1H -> -> 11 `i `uc ]
-[e = _TMR1L -> -> 220 `i `uc ]
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[e = . . _T3CONbits 0 0 -> -> 1 `i `uc ]
-"318
-}
-[e :U 532 ]
-[; ;blynd.c: 318: }
-[; ;blynd.c: 319: M4=0; man=1;
-"319
-[e = _M4 -> -> 0 `i `ui ]
-[e = _man -> 1 `i ]
-"320
-}
-[e :U 531 ]
-"321
-}
-[e :U 495 ]
-"161
-[e $U 496  ]
-[e :U 497 ]
-[; ;blynd.c: 320: }
-[; ;blynd.c: 321: }
-[; ;blynd.c: 323: }
-"323
-[e :UE 494 ]
-}
-"325
+"266
 [v _copy_frame `(v ~T0 @X0 1 ef2`i`i ]
 {
-[; ;blynd.c: 325: void copy_frame(int start, int end){
+[; ;blynd.c: 266: void copy_frame(int start, int end){
 [e :U _copy_frame ]
 [v _start `i ~T0 @X0 1 r1 ]
 [v _end `i ~T0 @X0 1 r2 ]
 [f ]
-[; ;blynd.c: 326: sw=0;
-"326
+[; ;blynd.c: 267: sw=0;
+"267
 [e = _sw -> 0 `i ]
-[; ;blynd.c: 327: for(k = start; k< end; k++)
-"327
+[; ;blynd.c: 268: for(k = start; k< end; k++)
+"268
 {
 [e = _k _start ]
-[e $U 537  ]
-"328
-[e :U 534 ]
-[; ;blynd.c: 328: {
+[e $U 525  ]
+"269
+[e :U 522 ]
+[; ;blynd.c: 269: {
 {
-[; ;blynd.c: 329: copy[sw]=name[k];
-"329
+[; ;blynd.c: 270: copy[sw]=name[k];
+"270
 [e = *U + &U _copy * -> -> _sw `ui `ux -> -> # *U &U _copy `ui `ux *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux ]
-[; ;blynd.c: 330: sw++;
-"330
+[; ;blynd.c: 271: sw++;
+"271
 [e ++ _sw -> 1 `i ]
-[; ;blynd.c: 331: name[k] = '#';
-"331
+[; ;blynd.c: 272: name[k] = '#';
+"272
 [e = *U + &U _name * -> -> _k `ui `ux -> -> # *U &U _name `ui `ux -> -> 35 `ui `uc ]
-"332
+"273
 }
-"327
+"268
 [e ++ _k -> 1 `i ]
-[e :U 537 ]
-[e $ < _k _end 534  ]
-[e :U 535 ]
-"332
+[e :U 525 ]
+[e $ < _k _end 522  ]
+[e :U 523 ]
+"273
 }
-[; ;blynd.c: 332: }
-[; ;blynd.c: 337: COPY_FLAG=0;
-"337
+[; ;blynd.c: 273: }
+[; ;blynd.c: 278: COPY_FLAG=0;
+"278
 [e = _COPY_FLAG -> 0 `i ]
-[; ;blynd.c: 338: }
-"338
-[e :UE 533 ]
+[; ;blynd.c: 279: }
+"279
+[e :UE 521 ]
 }
-"340
+"281
 [v _ACTION `(v ~T0 @X0 1 ef7`uc`uc`uc`uc`uc`uc`uc ]
-"341
+"282
 {
-[; ;blynd.c: 340: void ACTION(char Switch_Num_10s, char Switch_Num_1s, char sw_status, char speed_bit1, char speed_bit2, char parent,char finalFrameStat)
-[; ;blynd.c: 341: {
+[; ;blynd.c: 281: void ACTION(char Switch_Num_10s, char Switch_Num_1s, char sw_status, char speed_bit1, char speed_bit2, char parent,char finalFrameStat)
+[; ;blynd.c: 282: {
 [e :U _ACTION ]
-"340
+"281
 [v _Switch_Num_10s `uc ~T0 @X0 1 r1 ]
 [v _Switch_Num_1s `uc ~T0 @X0 1 r2 ]
 [v _sw_status `uc ~T0 @X0 1 r3 ]
@@ -5014,609 +4733,468 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _speed_bit2 `uc ~T0 @X0 1 r5 ]
 [v _parent `uc ~T0 @X0 1 r6 ]
 [v _finalFrameStat `uc ~T0 @X0 1 r7 ]
-"341
+"282
 [f ]
-"342
+"283
 [v _response_starts `i ~T0 @X0 1 a ]
-[; ;blynd.c: 342: int response_starts=0;
+[; ;blynd.c: 283: int response_starts=0;
 [e = _response_starts -> 0 `i ]
-"343
+"284
 [v _switch_status `i ~T0 @X0 1 a ]
-[; ;blynd.c: 343: int switch_status=0;
+[; ;blynd.c: 284: int switch_status=0;
 [e = _switch_status -> 0 `i ]
-"344
+"285
 [v _SwNum `i ~T0 @X0 1 a ]
-[; ;blynd.c: 344: int SwNum=0;
+[; ;blynd.c: 285: int SwNum=0;
 [e = _SwNum -> 0 `i ]
-[; ;blynd.c: 346: if(Switch_Num_1s != 'T')
-"346
-[e $ ! != -> _Switch_Num_1s `ui -> 84 `ui 539  ]
-[; ;blynd.c: 347: {
-"347
+[; ;blynd.c: 287: if(Switch_Num_1s != 'T')
+"287
+[e $ ! != -> _Switch_Num_1s `ui -> 84 `ui 527  ]
+[; ;blynd.c: 288: {
+"288
 {
-"348
+"289
 [v _FanSpeedString `uc ~T0 @X0 -> 2 `i a ]
 [v _SwNumString `uc ~T0 @X0 -> 2 `i a ]
-"349
+"290
 [v _FanSpeed `i ~T0 @X0 1 a ]
-[; ;blynd.c: 348: unsigned char FanSpeedString[2], SwNumString[2];
-[; ;blynd.c: 349: int FanSpeed=0;
+[; ;blynd.c: 289: unsigned char FanSpeedString[2], SwNumString[2];
+[; ;blynd.c: 290: int FanSpeed=0;
 [e = _FanSpeed -> 0 `i ]
-[; ;blynd.c: 351: switch_status=sw_status - '0';
-"351
+[; ;blynd.c: 292: switch_status=sw_status - '0';
+"292
 [e = _switch_status -> - -> _sw_status `ui -> 48 `ui `i ]
-[; ;blynd.c: 353: SwNumString[0]=Switch_Num_10s;
-"353
+[; ;blynd.c: 294: SwNumString[0]=Switch_Num_10s;
+"294
 [e = *U + &U _SwNumString * -> -> -> 0 `i `ui `ux -> -> # *U &U _SwNumString `ui `ux _Switch_Num_10s ]
-[; ;blynd.c: 354: SwNumString[1]=Switch_Num_1s;
-"354
+[; ;blynd.c: 295: SwNumString[1]=Switch_Num_1s;
+"295
 [e = *U + &U _SwNumString * -> -> -> 1 `i `ui `ux -> -> # *U &U _SwNumString `ui `ux _Switch_Num_1s ]
-[; ;blynd.c: 355: SwNum=atoi(SwNumString);
-"355
+[; ;blynd.c: 296: SwNum=atoi(SwNumString);
+"296
 [e = _SwNum ( _atoi (1 -> &U _SwNumString `*Cuc ]
-[; ;blynd.c: 357: FanSpeedString[0] = speed_bit1;
-"357
+[; ;blynd.c: 298: FanSpeedString[0] = speed_bit1;
+"298
 [e = *U + &U _FanSpeedString * -> -> -> 0 `i `ui `ux -> -> # *U &U _FanSpeedString `ui `ux _speed_bit1 ]
-[; ;blynd.c: 358: FanSpeedString[1] = speed_bit2;
-"358
+[; ;blynd.c: 299: FanSpeedString[1] = speed_bit2;
+"299
 [e = *U + &U _FanSpeedString * -> -> -> 1 `i `ui `ux -> -> # *U &U _FanSpeedString `ui `ux _speed_bit2 ]
-[; ;blynd.c: 359: FanSpeed = atoi(FanSpeedString);
-"359
+[; ;blynd.c: 300: FanSpeed = atoi(FanSpeedString);
+"300
 [e = _FanSpeed ( _atoi (1 -> &U _FanSpeedString `*Cuc ]
-"361
+"302
 [v _children `i ~T0 @X0 1 a ]
-[; ;blynd.c: 361: int children=parent - '0';
+[; ;blynd.c: 302: int children=parent - '0';
 [e = _children -> - -> _parent `ui -> 48 `ui `i ]
-"362
+"303
 [v _child_lock_num `i ~T0 @X0 1 a ]
-[; ;blynd.c: 362: int child_lock_num=(2*(SwNum)-1);
+[; ;blynd.c: 303: int child_lock_num=(2*(SwNum)-1);
 [e = _child_lock_num - * -> 2 `i _SwNum -> 1 `i ]
-[; ;blynd.c: 363: child_LOCK[child_lock_num]=children;
-"363
+[; ;blynd.c: 304: child_LOCK[child_lock_num]=children;
+"304
 [e = *U + &U _child_LOCK * -> -> _child_lock_num `ui `ux -> -> # *U &U _child_LOCK `ui `ux -> _children `ui ]
-[; ;blynd.c: 365: response_starts=((1+4*(SwNum))-4);
-"365
+[; ;blynd.c: 306: response_starts=((1+4*(SwNum))-4);
+"306
 [e = _response_starts - + -> 1 `i * -> 4 `i _SwNum -> 4 `i ]
-[; ;blynd.c: 366: st[response_starts++]='G';
-"366
+[; ;blynd.c: 307: st[response_starts++]='G';
+"307
 [e = *U + &U _st * -> -> ++ _response_starts -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
-[; ;blynd.c: 367: st[response_starts++]=sw_status;
-"367
+[; ;blynd.c: 308: st[response_starts++]=sw_status;
+"308
 [e = *U + &U _st * -> -> ++ _response_starts -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux _sw_status ]
-[; ;blynd.c: 368: st[response_starts++]=Switch_Num_10s;
-"368
+[; ;blynd.c: 309: st[response_starts++]=Switch_Num_10s;
+"309
 [e = *U + &U _st * -> -> ++ _response_starts -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux _Switch_Num_10s ]
-[; ;blynd.c: 369: st[response_starts]=Switch_Num_1s;
-"369
+[; ;blynd.c: 310: st[response_starts]=Switch_Num_1s;
+"310
 [e = *U + &U _st * -> -> _response_starts `ui `ux -> -> # *U &U _st `ui `ux _Switch_Num_1s ]
-[; ;blynd.c: 371: response_starts-=3;
-"371
+[; ;blynd.c: 312: response_starts-=3;
+"312
 [e =- _response_starts -> 3 `i ]
-[; ;blynd.c: 372: if(finalFrameStat=='1')
-"372
-[e $ ! == -> _finalFrameStat `ui -> 49 `ui 540  ]
-[; ;blynd.c: 373: {
-"373
+[; ;blynd.c: 313: if(finalFrameStat=='1')
+"313
+[e $ ! == -> _finalFrameStat `ui -> 49 `ui 528  ]
+[; ;blynd.c: 314: {
+"314
 {
-[; ;blynd.c: 374: writeUART(st+response_starts);
-"374
+[; ;blynd.c: 315: writeUART(st+response_starts);
+"315
 [e ( _writeUART (1 + &U _st * -> _response_starts `x -> -> # *U &U _st `i `x ]
-"375
+"316
 }
-[e :U 540 ]
-[; ;blynd.c: 375: }
-[; ;blynd.c: 376: man=0;
-"376
+[e :U 528 ]
+[; ;blynd.c: 316: }
+[; ;blynd.c: 317: man=0;
+"317
 [e = _man -> 0 `i ]
-"377
+"318
 }
-[e :U 539 ]
-[; ;blynd.c: 377: }
-[; ;blynd.c: 379: switch(SwNum)
-"379
-[e $U 542  ]
-[; ;blynd.c: 380: {
-"380
+[e :U 527 ]
+[; ;blynd.c: 318: }
+[; ;blynd.c: 320: switch(SwNum)
+"320
+[e $U 530  ]
+[; ;blynd.c: 321: {
+"321
 {
-[; ;blynd.c: 381: case 1:
-"381
-[e :U 543 ]
-[; ;blynd.c: 382: M1=switch_status;
-"382
+[; ;blynd.c: 322: case 1:
+"322
+[e :U 531 ]
+[; ;blynd.c: 323: M1=switch_status;
+"323
 [e = _M1 -> _switch_status `ui ]
-[; ;blynd.c: 383: if(switch_status==1){
-"383
-[e $ ! == _switch_status -> 1 `i 544  ]
+[; ;blynd.c: 324: if(switch_status==1){
+"324
+[e $ ! == _switch_status -> 1 `i 532  ]
 {
-[; ;blynd.c: 384: RF0=0;
-"384
+[; ;blynd.c: 325: RF0=0;
+"325
 [e = _RF0 -> -> 0 `i `b ]
-[; ;blynd.c: 385: st[5]='G'; st[6]='0'; st[7]='0'; st[8]='2'; writeUART(st+5);
-"385
+[; ;blynd.c: 326: st[5]='G'; st[6]='0'; st[7]='0'; st[8]='2'; writeUART(st+5);
+"326
 [e = *U + &U _st * -> -> -> 5 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
 [e = *U + &U _st * -> -> -> 6 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 7 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 8 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 50 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 5 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 386: RF1=1; curtFlag1=1; TimerCounter1=0;
-"386
+[; ;blynd.c: 327: RF1=1; curtFlag1=1; TimerCounter1=0;
+"327
 [e = _RF1 -> -> 1 `i `b ]
 [e = _curtFlag1 -> 1 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-[; ;blynd.c: 387: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
-"387
+[; ;blynd.c: 328: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
+"328
 [e = _TMR1H -> -> 11 `i `uc ]
 [e = _TMR1L -> -> 220 `i `uc ]
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-"388
+"329
 }
-[; ;blynd.c: 388: }
-[e $U 545  ]
-"389
-[e :U 544 ]
-[; ;blynd.c: 389: else{
+[; ;blynd.c: 329: }
+[e $U 533  ]
+"330
+[e :U 532 ]
+[; ;blynd.c: 330: else{
 {
-[; ;blynd.c: 390: RF0=0; RF1=0; T1CONbits.TMR1ON = 0; curtFlag1=0; TimerCounter1=0;
-"390
+[; ;blynd.c: 331: RF0=0; RF1=0; T1CONbits.TMR1ON = 0; curtFlag1=0; TimerCounter1=0;
+"331
 [e = _RF0 -> -> 0 `i `b ]
 [e = _RF1 -> -> 0 `i `b ]
 [e = . . _T1CONbits 0 0 -> -> 0 `i `uc ]
 [e = _curtFlag1 -> 0 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-"391
+"332
 }
-[e :U 545 ]
-[; ;blynd.c: 391: }
-[; ;blynd.c: 392: break;
-"392
-[e $U 541  ]
-[; ;blynd.c: 393: case 2:
-"393
-[e :U 546 ]
-[; ;blynd.c: 394: M2=switch_status;
-"394
+[e :U 533 ]
+[; ;blynd.c: 332: }
+[; ;blynd.c: 333: break;
+"333
+[e $U 529  ]
+[; ;blynd.c: 334: case 2:
+"334
+[e :U 534 ]
+[; ;blynd.c: 335: M2=switch_status;
+"335
 [e = _M2 -> _switch_status `ui ]
-[; ;blynd.c: 395: if(switch_status==1){
-"395
-[e $ ! == _switch_status -> 1 `i 547  ]
+[; ;blynd.c: 336: if(switch_status==1){
+"336
+[e $ ! == _switch_status -> 1 `i 535  ]
 {
-[; ;blynd.c: 396: RF1=0;
-"396
+[; ;blynd.c: 337: RF1=0;
+"337
 [e = _RF1 -> -> 0 `i `b ]
-[; ;blynd.c: 397: st[1]='G'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
-"397
+[; ;blynd.c: 338: st[1]='G'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
+"338
 [e = *U + &U _st * -> -> -> 1 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
 [e = *U + &U _st * -> -> -> 2 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 3 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
 [e = *U + &U _st * -> -> -> 4 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 49 `ui `uc ]
 [e ( _writeUART (1 + &U _st * -> -> 1 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 398: RF0=1; curtFlag1=1; TimerCounter1=0;
-"398
+[; ;blynd.c: 339: RF0=1; curtFlag1=1; TimerCounter1=0;
+"339
 [e = _RF0 -> -> 1 `i `b ]
 [e = _curtFlag1 -> 1 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-[; ;blynd.c: 399: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
-"399
+[; ;blynd.c: 340: TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
+"340
 [e = _TMR1H -> -> 11 `i `uc ]
 [e = _TMR1L -> -> 220 `i `uc ]
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-"400
+"341
 }
-[; ;blynd.c: 400: }
-[e $U 548  ]
-"401
-[e :U 547 ]
-[; ;blynd.c: 401: else{
+[; ;blynd.c: 341: }
+[e $U 536  ]
+"342
+[e :U 535 ]
+[; ;blynd.c: 342: else{
 {
-[; ;blynd.c: 402: RF0=0; RF1=0; T1CONbits.TMR1ON = 0; curtFlag1=0; TimerCounter1=0;
-"402
+[; ;blynd.c: 343: RF0=0; RF1=0; T1CONbits.TMR1ON = 0; curtFlag1=0; TimerCounter1=0;
+"343
 [e = _RF0 -> -> 0 `i `b ]
 [e = _RF1 -> -> 0 `i `b ]
 [e = . . _T1CONbits 0 0 -> -> 0 `i `uc ]
 [e = _curtFlag1 -> 0 `i ]
 [e = _TimerCounter1 -> 0 `i ]
-"403
+"344
 }
-[e :U 548 ]
-[; ;blynd.c: 403: }
-[; ;blynd.c: 404: break;
-"404
-[e $U 541  ]
-[; ;blynd.c: 406: case 3:
-"406
-[e :U 549 ]
-[; ;blynd.c: 407: M3=switch_status;
-"407
-[e = _M3 -> _switch_status `ui ]
-[; ;blynd.c: 408: if(switch_status==1){
-"408
-[e $ ! == _switch_status -> 1 `i 550  ]
-{
-[; ;blynd.c: 409: RA2=0;
-"409
-[e = _RA2 -> -> 0 `i `b ]
-[; ;blynd.c: 410: st[13]='G'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-"410
-[e = *U + &U _st * -> -> -> 13 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
-[e = *U + &U _st * -> -> -> 14 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 15 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 16 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 52 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 13 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 411: RA3=1; curtFlag2=1; TimerCounter2=0;
-"411
-[e = _RA3 -> -> 1 `i `b ]
-[e = _curtFlag2 -> 1 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-[; ;blynd.c: 412: TMR3H=0x0B; TMR3L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-"412
-[e = _TMR3H -> -> 11 `i `uc ]
-[e = _TMR3L -> -> 220 `i `uc ]
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[e = . . _T3CONbits 0 0 -> -> 1 `i `uc ]
-"413
+[e :U 536 ]
+[; ;blynd.c: 344: }
+[; ;blynd.c: 345: break;
+"345
+[e $U 529  ]
+[; ;blynd.c: 347: default:
+"347
+[e :U 537 ]
+[; ;blynd.c: 348: break;
+"348
+[e $U 529  ]
+"349
 }
-[; ;blynd.c: 413: }
-[e $U 551  ]
-"414
-[e :U 550 ]
-[; ;blynd.c: 414: else{
-{
-[; ;blynd.c: 415: RA2=0; RA3=0; T1CONbits.TMR1ON = 0; curtFlag2=0; TimerCounter2=0;
-"415
-[e = _RA2 -> -> 0 `i `b ]
-[e = _RA3 -> -> 0 `i `b ]
-[e = . . _T1CONbits 0 0 -> -> 0 `i `uc ]
-[e = _curtFlag2 -> 0 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-"416
+[; ;blynd.c: 349: }
+[e $U 529  ]
+"320
+[e :U 530 ]
+[e [\ _SwNum , $ -> 1 `i 531
+ , $ -> 2 `i 534
+ 537 ]
+"349
+[e :U 529 ]
+[; ;blynd.c: 350: }
+"350
+[e :UE 526 ]
 }
-[e :U 551 ]
-[; ;blynd.c: 416: }
-[; ;blynd.c: 417: break;
-"417
-[e $U 541  ]
-[; ;blynd.c: 418: case 4:
-"418
-[e :U 552 ]
-[; ;blynd.c: 419: M4=switch_status;
-"419
-[e = _M4 -> _switch_status `ui ]
-[; ;blynd.c: 420: if(switch_status==1){
-"420
-[e $ ! == _switch_status -> 1 `i 553  ]
-{
-[; ;blynd.c: 421: RA3=0;
-"421
-[e = _RA3 -> -> 0 `i `b ]
-[; ;blynd.c: 422: st[9]='G'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-"422
-[e = *U + &U _st * -> -> -> 9 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 71 `ui `uc ]
-[e = *U + &U _st * -> -> -> 10 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 11 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 48 `ui `uc ]
-[e = *U + &U _st * -> -> -> 12 `i `ui `ux -> -> # *U &U _st `ui `ux -> -> 51 `ui `uc ]
-[e ( _writeUART (1 + &U _st * -> -> 9 `i `x -> -> # *U &U _st `i `x ]
-[; ;blynd.c: 423: RA2=1; curtFlag2=1; TimerCounter2=0;
-"423
-[e = _RA2 -> -> 1 `i `b ]
-[e = _curtFlag2 -> 1 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-[; ;blynd.c: 424: TMR1H=0x0B; TMR1L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-"424
-[e = _TMR1H -> -> 11 `i `uc ]
-[e = _TMR1L -> -> 220 `i `uc ]
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[e = . . _T3CONbits 0 0 -> -> 1 `i `uc ]
-"425
-}
-[; ;blynd.c: 425: }
-[e $U 554  ]
-"426
-[e :U 553 ]
-[; ;blynd.c: 426: else{
-{
-[; ;blynd.c: 427: RA2=0; RA3=0; T3CONbits.TMR3ON = 0; curtFlag2=0; TimerCounter2=0;
-"427
-[e = _RA2 -> -> 0 `i `b ]
-[e = _RA3 -> -> 0 `i `b ]
-[e = . . _T3CONbits 0 0 -> -> 0 `i `uc ]
-[e = _curtFlag2 -> 0 `i ]
-[e = _TimerCounter2 -> 0 `i ]
-"428
-}
-[e :U 554 ]
-[; ;blynd.c: 428: }
-[; ;blynd.c: 429: break;
-"429
-[e $U 541  ]
-[; ;blynd.c: 430: default:
-"430
-[e :U 555 ]
-[; ;blynd.c: 431: break;
-"431
-[e $U 541  ]
-"432
-}
-[; ;blynd.c: 432: }
-[e $U 541  ]
-"379
-[e :U 542 ]
-[e [\ _SwNum , $ -> 1 `i 543
- , $ -> 2 `i 546
- , $ -> 3 `i 549
- , $ -> 4 `i 552
- 555 ]
-"432
-[e :U 541 ]
-[; ;blynd.c: 433: }
-"433
-[e :UE 538 ]
-}
-"435
+"352
 [v _writeUART `(v ~T0 @X0 1 ef1`*uc ]
 {
-[; ;blynd.c: 435: void writeUART(char *str2Write){
+[; ;blynd.c: 352: void writeUART(char *str2Write){
 [e :U _writeUART ]
 [v _str2Write `*uc ~T0 @X0 1 r1 ]
 [f ]
-"436
+"353
 [v _Tx_count `i ~T0 @X0 1 a ]
-[; ;blynd.c: 436: int Tx_count=0;
+[; ;blynd.c: 353: int Tx_count=0;
 [e = _Tx_count -> 0 `i ]
-[; ;blynd.c: 438: while(Tx_count!=4)
-"438
-[e $U 557  ]
-[e :U 558 ]
-[; ;blynd.c: 439: {
-"439
+[; ;blynd.c: 355: while(Tx_count!=4)
+"355
+[e $U 539  ]
+[e :U 540 ]
+[; ;blynd.c: 356: {
+"356
 {
-[; ;blynd.c: 441: while (!TX1STAbits.TRMT);
-"441
-[e $U 560  ]
-[e :U 561 ]
-[e :U 560 ]
-[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 561  ]
-[e :U 562 ]
-[; ;blynd.c: 442: TX1REG = *str2Write;
-"442
+[; ;blynd.c: 358: while (!TX1STAbits.TRMT);
+"358
+[e $U 542  ]
+[e :U 543 ]
+[e :U 542 ]
+[e $ ! != -> . . _TX1STAbits 0 1 `i -> -> -> 0 `i `Vuc `i 543  ]
+[e :U 544 ]
+[; ;blynd.c: 359: TX1REG = *str2Write;
+"359
 [e = _TX1REG *U _str2Write ]
-[; ;blynd.c: 443: *str2Write++;
-"443
+[; ;blynd.c: 360: *str2Write++;
+"360
 [e *U ++ _str2Write * -> -> 1 `i `x -> -> # *U _str2Write `i `x ]
-[; ;blynd.c: 444: Tx_count++;
-"444
+[; ;blynd.c: 361: Tx_count++;
+"361
 [e ++ _Tx_count -> 1 `i ]
-"445
+"362
 }
-[e :U 557 ]
-"438
-[e $ != _Tx_count -> 4 `i 558  ]
-[e :U 559 ]
-[; ;blynd.c: 445: }
-[; ;blynd.c: 446: }
-"446
-[e :UE 556 ]
+[e :U 539 ]
+"355
+[e $ != _Tx_count -> 4 `i 540  ]
+[e :U 541 ]
+[; ;blynd.c: 362: }
+[; ;blynd.c: 363: }
+"363
+[e :UE 538 ]
 }
-"448
+"365
 [v _EUSART_Initialize `(v ~T0 @X0 1 ef ]
 {
-[; ;blynd.c: 448: void EUSART_Initialize(){
+[; ;blynd.c: 365: void EUSART_Initialize(){
 [e :U _EUSART_Initialize ]
 [f ]
-[; ;blynd.c: 450: PIE1bits.RC1IE = 0;
-"450
+[; ;blynd.c: 367: PIE1bits.RC1IE = 0;
+"367
 [e = . . _PIE1bits 0 5 -> -> 0 `i `uc ]
-[; ;blynd.c: 451: PIE1bits.TX1IE = 0;
-"451
+[; ;blynd.c: 368: PIE1bits.TX1IE = 0;
+"368
 [e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
-[; ;blynd.c: 456: BAUD1CON = 0x0A;
-"456
+[; ;blynd.c: 373: BAUD1CON = 0x0A;
+"373
 [e = _BAUD1CON -> -> 10 `i `uc ]
-[; ;blynd.c: 459: RC1STA = 0x90;
-"459
+[; ;blynd.c: 376: RC1STA = 0x90;
+"376
 [e = _RC1STA -> -> 144 `i `uc ]
-[; ;blynd.c: 462: TX1STA = 0x24;
-"462
+[; ;blynd.c: 379: TX1STA = 0x24;
+"379
 [e = _TX1STA -> -> 36 `i `uc ]
-[; ;blynd.c: 467: SP1BRGL = 0xA0;
-"467
+[; ;blynd.c: 384: SP1BRGL = 0xA0;
+"384
 [e = _SP1BRGL -> -> 160 `i `uc ]
-[; ;blynd.c: 469: SP1BRGH = 0x01;
-"469
+[; ;blynd.c: 386: SP1BRGH = 0x01;
+"386
 [e = _SP1BRGH -> -> 1 `i `uc ]
-[; ;blynd.c: 472: GIE = 1;
-"472
+[; ;blynd.c: 389: GIE = 1;
+"389
 [e = _GIE -> -> 1 `i `b ]
-[; ;blynd.c: 475: PEIE = 1;
-"475
+[; ;blynd.c: 392: PEIE = 1;
+"392
 [e = _PEIE -> -> 1 `i `b ]
-[; ;blynd.c: 478: PIE1bits.RC1IE = 1;
-"478
+[; ;blynd.c: 395: PIE1bits.RC1IE = 1;
+"395
 [e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-[; ;blynd.c: 481: TX1STAbits.TXEN = 1;
-"481
+[; ;blynd.c: 398: TX1STAbits.TXEN = 1;
+"398
 [e = . . _TX1STAbits 0 5 -> -> 1 `i `uc ]
-[; ;blynd.c: 484: RC1STAbits.SPEN = 1;
-"484
+[; ;blynd.c: 401: RC1STAbits.SPEN = 1;
+"401
 [e = . . _RC1STAbits 0 7 -> -> 1 `i `uc ]
-[; ;blynd.c: 485: }
-"485
-[e :UE 563 ]
+[; ;blynd.c: 402: }
+"402
+[e :UE 545 ]
 }
-"487
+"404
 [v _TMR1_Initialize `(v ~T0 @X0 1 ef ]
 {
-[; ;blynd.c: 487: void TMR1_Initialize(void){
+[; ;blynd.c: 404: void TMR1_Initialize(void){
 [e :U _TMR1_Initialize ]
 [f ]
-[; ;blynd.c: 491: T1CON = 0x30;
-"491
+[; ;blynd.c: 408: T1CON = 0x30;
+"408
 [e = _T1CON -> -> 48 `i `uc ]
-[; ;blynd.c: 494: T1GCON = 0x00;
-"494
+[; ;blynd.c: 411: T1GCON = 0x00;
+"411
 [e = _T1GCON -> -> 0 `i `uc ]
-[; ;blynd.c: 497: TMR1H = 0x00;
-"497
+[; ;blynd.c: 414: TMR1H = 0x00;
+"414
 [e = _TMR1H -> -> 0 `i `uc ]
-[; ;blynd.c: 500: TMR1L = 0x00;
-"500
+[; ;blynd.c: 417: TMR1L = 0x00;
+"417
 [e = _TMR1L -> -> 0 `i `uc ]
-[; ;blynd.c: 503: PIR1bits.TMR1IF = 0;
-"503
+[; ;blynd.c: 420: PIR1bits.TMR1IF = 0;
+"420
 [e = . . _PIR1bits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 506: PIE1bits.TMR1IE = 1;
-"506
+[; ;blynd.c: 423: PIE1bits.TMR1IE = 1;
+"423
 [e = . . _PIE1bits 0 0 -> -> 1 `i `uc ]
-[; ;blynd.c: 509: T1CONbits.TMR1ON = 1;
-"509
+[; ;blynd.c: 426: T1CONbits.TMR1ON = 1;
+"426
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;blynd.c: 516: }
-"516
-[e :UE 564 ]
+[; ;blynd.c: 433: }
+"433
+[e :UE 546 ]
 }
-"518
+"435
 [v _TMR3_Initialize `(v ~T0 @X0 1 ef ]
 {
-[; ;blynd.c: 518: void TMR3_Initialize(void){
+[; ;blynd.c: 435: void TMR3_Initialize(void){
 [e :U _TMR3_Initialize ]
 [f ]
-[; ;blynd.c: 522: T3CON = 0x30;
-"522
+[; ;blynd.c: 439: T3CON = 0x30;
+"439
 [e = _T3CON -> -> 48 `i `uc ]
-[; ;blynd.c: 525: T3GCON = 0x00;
-"525
+[; ;blynd.c: 442: T3GCON = 0x00;
+"442
 [e = _T3GCON -> -> 0 `i `uc ]
-[; ;blynd.c: 528: TMR3H = 0x00;
-"528
+[; ;blynd.c: 445: TMR3H = 0x00;
+"445
 [e = _TMR3H -> -> 0 `i `uc ]
-[; ;blynd.c: 531: TMR3L = 0x00;
-"531
+[; ;blynd.c: 448: TMR3L = 0x00;
+"448
 [e = _TMR3L -> -> 0 `i `uc ]
-[; ;blynd.c: 534: PIR3bits.TMR3IF = 0;
-"534
+[; ;blynd.c: 451: PIR3bits.TMR3IF = 0;
+"451
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 537: PIE3bits.TMR3IE = 1;
-"537
+[; ;blynd.c: 454: PIE3bits.TMR3IE = 1;
+"454
 [e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;blynd.c: 540: T1CONbits.TMR1ON = 1;
-"540
+[; ;blynd.c: 457: T1CONbits.TMR1ON = 1;
+"457
 [e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
-[; ;blynd.c: 543: GIE = 1;
-"543
+[; ;blynd.c: 460: GIE = 1;
+"460
 [e = _GIE -> -> 1 `i `b ]
-[; ;blynd.c: 546: PEIE = 1;
-"546
+[; ;blynd.c: 463: PEIE = 1;
+"463
 [e = _PEIE -> -> 1 `i `b ]
-[; ;blynd.c: 547: }
-"547
-[e :UE 565 ]
+[; ;blynd.c: 464: }
+"464
+[e :UE 547 ]
 }
-"549
+"466
 [v _pin_manager `(v ~T0 @X0 1 ef ]
 {
-[; ;blynd.c: 549: void pin_manager() {
+[; ;blynd.c: 466: void pin_manager() {
 [e :U _pin_manager ]
 [f ]
-[; ;blynd.c: 553: ANSELG=0x00;
-"553
+[; ;blynd.c: 470: ANSELG=0x00;
+"470
 [e = _ANSELG -> -> 0 `i `uc ]
-[; ;blynd.c: 555: WPUG = 0;
-"555
+[; ;blynd.c: 472: WPUG = 0;
+"472
 [e = _WPUG -> -> 0 `i `uc ]
-[; ;blynd.c: 558: ANSELF=0x00;
-"558
+[; ;blynd.c: 475: ANSELF=0x00;
+"475
 [e = _ANSELF -> -> 0 `i `uc ]
-[; ;blynd.c: 559: TRISFbits.TRISF0=0;
-"559
+[; ;blynd.c: 476: TRISFbits.TRISF0=0;
+"476
 [e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 560: TRISFbits.TRISF1=0;
-"560
+[; ;blynd.c: 477: TRISFbits.TRISF1=0;
+"477
 [e = . . _TRISFbits 0 1 -> -> 0 `i `uc ]
-[; ;blynd.c: 561: TRISFbits.TRISF2=1;
-"561
+[; ;blynd.c: 478: TRISFbits.TRISF2=1;
+"478
 [e = . . _TRISFbits 0 2 -> -> 1 `i `uc ]
-[; ;blynd.c: 562: TRISFbits.TRISF3=1;
-"562
+[; ;blynd.c: 479: TRISFbits.TRISF3=1;
+"479
 [e = . . _TRISFbits 0 3 -> -> 1 `i `uc ]
-[; ;blynd.c: 563: TRISFbits.TRISF4=1;
-"563
+[; ;blynd.c: 480: TRISFbits.TRISF4=1;
+"480
 [e = . . _TRISFbits 0 4 -> -> 1 `i `uc ]
-[; ;blynd.c: 564: TRISFbits.TRISF5=1;
-"564
+[; ;blynd.c: 481: TRISFbits.TRISF5=1;
+"481
 [e = . . _TRISFbits 0 5 -> -> 1 `i `uc ]
-[; ;blynd.c: 565: TRISFbits.TRISF6=1;
-"565
+[; ;blynd.c: 482: TRISFbits.TRISF6=1;
+"482
 [e = . . _TRISFbits 0 6 -> -> 1 `i `uc ]
-[; ;blynd.c: 566: TRISFbits.TRISF7=1;
-"566
+[; ;blynd.c: 483: TRISFbits.TRISF7=1;
+"483
 [e = . . _TRISFbits 0 7 -> -> 1 `i `uc ]
-[; ;blynd.c: 569: WPUE=0x00;
-"569
+[; ;blynd.c: 486: WPUE=0x00;
+"486
 [e = _WPUE -> -> 0 `i `uc ]
-[; ;blynd.c: 570: ANSELE=0x00;
-"570
+[; ;blynd.c: 487: ANSELE=0x00;
+"487
 [e = _ANSELE -> -> 0 `i `uc ]
-[; ;blynd.c: 571: TRISEbits.TRISE3=1;
-"571
-[e = . . _TRISEbits 0 3 -> -> 1 `i `uc ]
-[; ;blynd.c: 572: TRISEbits.TRISE5=0;
-"572
-[e = . . _TRISEbits 0 5 -> -> 0 `i `uc ]
-[; ;blynd.c: 575: WPUD=0x00;
-"575
+[; ;blynd.c: 492: WPUD=0x00;
+"492
 [e = _WPUD -> -> 0 `i `uc ]
-[; ;blynd.c: 576: ANSELD=0x00;
-"576
+[; ;blynd.c: 493: ANSELD=0x00;
+"493
 [e = _ANSELD -> -> 0 `i `uc ]
-[; ;blynd.c: 577: TRISD=0xFF;
-"577
+[; ;blynd.c: 494: TRISD=0xFF;
+"494
 [e = _TRISD -> -> 255 `i `uc ]
-[; ;blynd.c: 580: TRISCbits.TRISC0=0;
-"580
-[e = . . _TRISCbits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 581: TRISCbits.TRISC1=0;
-"581
-[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
-[; ;blynd.c: 584: ANSELB=0x00;
-"584
+[; ;blynd.c: 501: ANSELB=0x00;
+"501
 [e = _ANSELB -> -> 0 `i `uc ]
-[; ;blynd.c: 585: TRISBbits.TRISB1=0;
-"585
-[e = . . _TRISBbits 0 1 -> -> 0 `i `uc ]
-[; ;blynd.c: 586: TRISBbits.TRISB3=0;
-"586
-[e = . . _TRISBbits 0 3 -> -> 0 `i `uc ]
-[; ;blynd.c: 587: WPUB = 0x00;
-"587
+[; ;blynd.c: 504: WPUB = 0x00;
+"504
 [e = _WPUB -> -> 0 `i `uc ]
-[; ;blynd.c: 590: ANSELA = 0x00;
-"590
+[; ;blynd.c: 507: ANSELA = 0x00;
+"507
 [e = _ANSELA -> -> 0 `i `uc ]
-[; ;blynd.c: 591: TRISAbits.TRISA0=0;
-"591
-[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
-[; ;blynd.c: 592: TRISAbits.TRISA1=0;
-"592
-[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
-[; ;blynd.c: 593: TRISAbits.TRISA2=0;
-"593
-[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
-[; ;blynd.c: 594: TRISAbits.TRISA3=0;
-"594
-[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
-[; ;blynd.c: 596: TRISAbits.TRISA5=1;
-"596
-[e = . . _TRISAbits 0 5 -> -> 1 `i `uc ]
-[; ;blynd.c: 604: TRISCbits.TRISC6 = 0;
-"604
+[; ;blynd.c: 521: TRISCbits.TRISC6 = 0;
+"521
 [e = . . _TRISCbits 0 6 -> -> 0 `i `uc ]
-[; ;blynd.c: 605: TRISCbits.TRISC7 = 1;
-"605
+[; ;blynd.c: 522: TRISCbits.TRISC7 = 1;
+"522
 [e = . . _TRISCbits 0 7 -> -> 1 `i `uc ]
-[; ;blynd.c: 607: }
-"607
-[e :UE 566 ]
+[; ;blynd.c: 524: }
+"524
+[e :UE 548 ]
 }
 [a 1C 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 0 ]
 

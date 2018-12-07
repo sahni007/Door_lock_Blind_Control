@@ -2,12 +2,12 @@ Microchip MPLAB XC8 Compiler V1.45 ()
 
 Linker command line:
 
--W-3 --edf=C:\Program Files\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
-  -h+dist/default/production\blynd.X.production.sym \
-  --cmf=dist/default/production\blynd.X.production.cmf -z -Q16F1526 \
-  -oC:\Users\lotus\AppData\Local\Temp\s2kc.2 \
-  -Mdist/default/production/blynd.X.production.map -E1 -ver=XC8 \
-  -ASTACK=02154h-022efh -pstack=STACK -ACODE=00h-07FFhx4 \
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
+  -h+dist/default/production\Door_lock_Blind_Control.production.sym \
+  --cmf=dist/default/production\Door_lock_Blind_Control.production.cmf -z \
+  -Q16F1526 -oC:\Users\Alfaone\AppData\Local\Temp\s8as.2 \
+  -Mdist/default/production/Door_lock_Blind_Control.production.map -E1 \
+  -ver=XC8 -ASTACK=02154h-022efh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
   -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
   -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh -ABANK3=01A0h-01EFh \
@@ -30,8 +30,8 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\lotus\AppData\Local\Temp\s2kc.obj \
-  dist/default/production\blynd.X.production.obj 
+  C:\Users\Alfaone\AppData\Local\Temp\s8as.obj \
+  dist/default/production\Door_lock_Blind_Control.production.obj 
 
 Object code version is 3.11
 
@@ -40,31 +40,31 @@ Machine type is 16F1526
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\lotus\AppData\Local\Temp\s2kc.obj
-                end_init                            103      103        2        8       0
+C:\Users\Alfaone\AppData\Local\Temp\s8as.obj
+                end_init                             AF       AF        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
-dist/default/production\blynd.X.production.obj
-                cinit                               105      105       45        8       0
-                intentry                              4        4       FF        8       0
-                text13                              EEB      EEB       19     1DD6       0
-                text11                              F04      F04       1C     1E08       0
-                text10                              EB7      EB7        F     1D6E       0
-                text9                               726      726       6B        8       0
-                text8                               7D9      7D9       1D        8       0
-                text7                               576      576      1B0        8       0
-                text6                               F83      F83       3D     1F06       0
-                text5                               ED5      ED5       16     1DAA       0
-                text4                               EAB      EAB        C     1D56       0
-                text3                               EC6      EC6        F     1D8C       0
-                text2                               7F6      7F6        9        8       0
-                text1                               F20      F20       31     1E40       0
-                maintext                            14A      14A      42C        8       0
+dist/default/production\Door_lock_Blind_Control.production.obj
+                cinit                                B1       B1       45        8       0
+                intentry                              4        4       AB        8       0
+                text13                              6E9      6E9       19      D60       0
+                text11                              6CD      6CD       1C      D60       0
+                text10                              727      727        F      D60       0
+                text9                               50E      50E       6B        8       0
+                text8                               6B0      6B0       1D      D60       0
+                text7                               3E4      3E4      12A        8       0
+                text6                               601      601       38        8       0
+                text5                               702      702       16      D60       0
+                text4                               736      736        C      D60       0
+                text3                               718      718        F      D60       0
+                text2                               742      742        9      D60       0
+                text1                               66B      66B       24        8       0
+                maintext                             F6       F6      2EE        8       0
                 cstackBANK0                          20       20       2D       20       1
                 cstackCOMMON                         76       76        6       70       1
                 cstackBANK4                         220      220       14      220       1
-                clrtext                             E9F      E9F        6     1D3E       0
-                inittext                            EA5      EA5        6     1D4A       0
+                clrtext                             751      751        6      D60       0
+                inittext                            74B      74B        6      D60       0
                 dataBANK3                           1A0      1A0       40      1A0       1
                 dataBANK2                           120      120       48      120       1
                 dataBANK1                            A0       A0       32       A0       1
@@ -72,42 +72,42 @@ dist/default/production\blynd.X.production.obj
                 dataBANK0                            5B       5B        2       20       1
                 bssBANK0                             4D       4D        E       20       1
                 bssCOMMON                            70       70        6       70       1
-                stringtext1                        1000     1000       21     2000       0
-                idataBANK3                          FC0      FC0       40     1F80       0
-                idataBANK2                          791      791       48        8       0
-                idataBANK1                          F51      F51       32     1EA2       0
-                idataBANK0                            2        2        2        0       0
+                stringtext1                         68F      68F       21      D1E       0
+                idataBANK3                          5C1      5C1       40        8       0
+                idataBANK2                          579      579       48        8       0
+                idataBANK1                          639      639       32        8       0
+                idataBANK0                          757      757        2      D60       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
-                end_init                            103      103        2         0
-                cinit                               105      105       45         0
-                intentry                              4        4       FF         0
+                end_init                             AF       AF        2         0
+                cinit                                B1       B1       45         0
+                intentry                              4        4       AB         0
                 reset_vec                             0        0        2         0
-                text13                              EEB      EEB       19         0
-                text11                              F04      F04       1C         0
-                text10                              EB7      EB7        F         0
-                text9                               726      726       6B         0
-                text8                               7D9      7D9       1D         0
-                text7                               576      576      1B0         0
-                text6                               F83      F83       3D         0
-                text5                               ED5      ED5       16         0
-                text4                               EAB      EAB        C         0
-                text3                               EC6      EC6        F         0
-                text2                               7F6      7F6        9         0
-                text1                               F20      F20       31         0
-                maintext                            14A      14A      42C         0
-                clrtext                             E9F      E9F        6         0
-                inittext                            EA5      EA5        6         0
-                idataBANK3                          FC0      FC0       40         0
-                idataBANK2                          791      791       48         0
-                idataBANK1                          F51      F51       32         0
-                idataBANK0                            2        2        2         0
+                text13                              6E9      6E9       19         0
+                text11                              6CD      6CD       1C         0
+                text10                              727      727        F         0
+                text9                               50E      50E       6B         0
+                text8                               6B0      6B0       1D         0
+                text7                               3E4      3E4      12A         0
+                text6                               601      601       38         0
+                text5                               702      702       16         0
+                text4                               736      736        C         0
+                text3                               718      718        F         0
+                text2                               742      742        9         0
+                text1                               66B      66B       24         0
+                maintext                             F6       F6      2EE         0
+                clrtext                             751      751        6         0
+                inittext                            74B      74B        6         0
+                idataBANK3                          5C1      5C1       40         0
+                idataBANK2                          579      579       48         0
+                idataBANK1                          639      639       32         0
+                idataBANK0                          757      757        2         0
 
         CLASS   STRCODE        
-                stringtext1                        1000     1000       21         0
+                stringtext1                         68F      68F       21         0
 
         CLASS   STRING         
 
@@ -273,27 +273,16 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
-                reset_vec                      000000  000004  000004         0       0  CODE        2
-                intentry                       000004  0007FB  0007FF         8       0  CODE        2
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                intentry                       000004  00068B  00068F         8       0  CODE        2
                 cstackBANK0                    000020  00003D  00005D        20       1  BANK0       1
                 bssCOMMON                      000070  00000C  00007C        70       1  COMMON      1
                 dataBANK1                      0000A0  00004A  0000EA        A0       1  BANK1       1
                 dataBANK2                      000120  000048  000168       120       1  BANK2       1
                 dataBANK3                      0001A0  000040  0001E0       1A0       1  BANK3       1
                 cstackBANK4                    000220  000014  000234       220       1  BANK4       1
-                clrtext                        000E9F  000006  000EA5      1D3E       0  CODE        2
-                inittext                       000EA5  000006  000EAB      1D4A       0  CODE        2
-                text4                          000EAB  00000C  000EB7      1D56       0  CODE        2
-                text10                         000EB7  00000F  000EC6      1D6E       0  CODE        2
-                text3                          000EC6  00000F  000ED5      1D8C       0  CODE        2
-                text5                          000ED5  000016  000EEB      1DAA       0  CODE        2
-                text13                         000EEB  000019  000F04      1DD6       0  CODE        2
-                text11                         000F04  00001C  000F20      1E08       0  CODE        2
-                text1                          000F20  000031  000F51      1E40       0  CODE        2
-                idataBANK1                     000F51  000032  000F83      1EA2       0  CODE        2
-                text6                          000F83  00003D  000FC0      1F06       0  CODE        2
-                idataBANK3                     000FC0  000040  001000      1F80       0  CODE        2
-                stringtext1                    001000  000021  001021      2000       0  STRCODE     2
+                stringtext1                    00068F  000021  0006B0       D1E       0  STRCODE     2
+                text8                          0006B0  0000A9  000759       D60       0  CODE        2
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
 
@@ -311,13 +300,13 @@ UNUSED ADDRESS RANGES
         BANK8            00420-0046F              50           1
         BANK9            004A0-004BF              20           1
         BIGRAM           02000-022EF             2F0           1
-        CODE             007FF-00E9E               1           2
-                         01021-01FFF             7DF
+        CODE             00002-00003               2           2
+                         00759-01FFF             800
         COMMON           0007C-0007D               2           1
-        CONST            007FF-00E9E             100           2
-                         01021-01FFF             100
-        ENTRY            007FF-00E9E             100           2
-                         01021-01FFF             100
+        CONST            00002-00003               2           2
+                         00759-01FFF             100
+        ENTRY            00002-00003               2           2
+                         00759-01FFF             100
         IDLOC            08000-08003               4           2
         RAM              0005D-0006F              13           1
                          000EA-000EF               6
@@ -362,10 +351,10 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0041F              20           1
         SFR9             00480-0049F              20           1
         STACK            02154-022EF             19C           1
-        STRCODE          007FF-00E9E             6A0           2
-                         01021-01FFF             FDF
-        STRING           007FF-00E9E             100           2
-                         01021-01FFF             100
+        STRCODE          00002-00003               2           2
+                         00759-01FFF            18A7
+        STRING           00002-00003               2           2
+                         00759-01FFF             100
 
                                   Symbol Table
 
@@ -381,12 +370,12 @@ ACTION@child_lock_num       cstackBANK0  0003A
 ACTION@children             cstackBANK0  00038
 ACTION@finalFrameStat       cstackBANK0  00033
 ACTION@parent               cstackBANK0  00032
-ACTION@response_starts      cstackBANK0  00043
+ACTION@response_starts      cstackBANK0  00045
 ACTION@speed_bit1           cstackBANK0  00030
 ACTION@speed_bit2           cstackBANK0  00031
 ACTION@sw_status            cstackBANK0  0002F
-ACTION@switch_status        cstackBANK0  00045
-_ACTION                     text7        00576
+ACTION@switch_status        cstackBANK0  00043
+_ACTION                     text7        003E4
 _ANSELA                     (abs)        0018C
 _ANSELB                     (abs)        0018D
 _ANSELD                     (abs)        0018F
@@ -394,28 +383,24 @@ _ANSELE                     (abs)        00190
 _ANSELF                     (abs)        0040C
 _ANSELG                     (abs)        0040D
 _BAUD1CON                   (abs)        0019F
-_COPY_FLAG                  bssBANK0     00055
-_EUSART_Initialize          text5        00ED5
+_COPY_FLAG                  bssBANK0     00051
+_EUSART_Initialize          text5        00702
 _GIE                        (abs)        0005F
-_M1                         bssBANK0     00053
-_M2                         bssBANK0     00051
-_M3                         bssBANK0     0004F
-_M4                         bssBANK0     0004D
+_M1                         bssBANK0     0004F
+_M2                         bssBANK0     0004D
+_M3                         bssBANK1     000D6
+_M4                         bssBANK1     000D4
 _PEIE                       (abs)        0005E
 _PIE1bits                   (abs)        00091
 _PIE3bits                   (abs)        00093
 _PIR1bits                   (abs)        00011
 _PIR3bits                   (abs)        00013
-_RA2                        (abs)        00062
-_RA3                        (abs)        00063
 _RC1IF                      (abs)        0008D
 _RC1REG                     (abs)        00199
 _RC1STA                     (abs)        0019D
 _RC1STAbits                 (abs)        0019D
 _RF0                        (abs)        01460
 _RF1                        (abs)        01461
-_RF2                        (abs)        01462
-_RF3                        (abs)        01463
 _RF5                        (abs)        01465
 _RF7                        (abs)        01467
 _SP1BRGH                    (abs)        0019C
@@ -424,26 +409,21 @@ _T1CON                      (abs)        00018
 _T1CONbits                  (abs)        00018
 _T1GCON                     (abs)        00019
 _T3CON                      (abs)        00413
-_T3CONbits                  (abs)        00413
 _T3GCON                     (abs)        00414
 _TMR1H                      (abs)        00017
 _TMR1L                      (abs)        00016
-_TMR1_Initialize            text4        00EAB
+_TMR1_Initialize            text4        00736
 _TMR3H                      (abs)        00412
 _TMR3L                      (abs)        00411
-_TMR3_Initialize            text3        00EC6
-_TRISAbits                  (abs)        0008C
-_TRISBbits                  (abs)        0008D
+_TMR3_Initialize            text3        00718
 _TRISCbits                  (abs)        0008E
 _TRISD                      (abs)        0008F
-_TRISEbits                  (abs)        00090
 _TRISFbits                  (abs)        0030C
 _TX1REG                     (abs)        0019A
 _TX1STA                     (abs)        0019E
 _TX1STAbits                 (abs)        0019E
-_TX_FLAG                    bssBANK1     000DA
-_TimerCounter1              bssCOMMON    00072
-_TimerCounter2              bssCOMMON    00070
+_TX_FLAG                    bssBANK0     00057
+_TimerCounter1              bssCOMMON    00070
 _WPUB                       (abs)        0020D
 _WPUD                       (abs)        0020F
 _WPUE                       (abs)        00210
@@ -500,7 +480,7 @@ __Hbigram                   bigram       00000
 __HbssBANK0                 bssBANK0     00000
 __HbssBANK1                 bssBANK1     00000
 __HbssCOMMON                bssCOMMON    00000
-__Hcinit                    cinit        0014A
+__Hcinit                    cinit        000F6
 __Hclrtext                  clrtext      00000
 __Hcode                     code         00000
 __Hcommon                   common       00000
@@ -513,16 +493,16 @@ __HdataBANK1                dataBANK1    00000
 __HdataBANK2                dataBANK2    00000
 __HdataBANK3                dataBANK3    00000
 __Heeprom_data              eeprom_data  00000
-__Hend_init                 end_init     00105
+__Hend_init                 end_init     000B1
 __Hfunctab                  functab      00000
 __HidataBANK0               idataBANK0   00000
 __HidataBANK1               idataBANK1   00000
 __HidataBANK2               idataBANK2   00000
 __HidataBANK3               idataBANK3   00000
 __Hidloc                    idloc        00000
-__Hinit                     init         00103
+__Hinit                     init         000AF
 __Hinittext                 inittext     00000
-__Hintentry                 intentry     00103
+__Hintentry                 intentry     000AF
 __Hmaintext                 maintext     00000
 __Hpowerup                  powerup      00000
 __Hram                      ram          00000
@@ -605,7 +585,7 @@ __Lbigram                   bigram       00000
 __LbssBANK0                 bssBANK0     00000
 __LbssBANK1                 bssBANK1     00000
 __LbssCOMMON                bssCOMMON    00000
-__Lcinit                    cinit        00105
+__Lcinit                    cinit        000B1
 __Lclrtext                  clrtext      00000
 __Lcode                     code         00000
 __Lcommon                   common       00000
@@ -618,14 +598,14 @@ __LdataBANK1                dataBANK1    00000
 __LdataBANK2                dataBANK2    00000
 __LdataBANK3                dataBANK3    00000
 __Leeprom_data              eeprom_data  00000
-__Lend_init                 end_init     00103
+__Lend_init                 end_init     000AF
 __Lfunctab                  functab      00000
 __LidataBANK0               idataBANK0   00000
 __LidataBANK1               idataBANK1   00000
 __LidataBANK2               idataBANK2   00000
 __LidataBANK3               idataBANK3   00000
 __Lidloc                    idloc        00000
-__Linit                     init         00103
+__Linit                     init         000AF
 __Linittext                 inittext     00000
 __Lintentry                 intentry     00004
 __Lmaintext                 maintext     00000
@@ -679,26 +659,26 @@ __S2                        (abs)        00000
 ___int_sp                   stack        00000
 ___latbits                  (abs)        00002
 ___sp                       stack        00000
-___wmul                     text11       00F04
+___wmul                     text11       006CD
 ___wmul@multiplicand        cstackBANK0  00022
 ___wmul@multiplier          cstackBANK0  00020
 ___wmul@product             cstackBANK0  00024
-__end_of_ACTION             text7        00726
-__end_of_EUSART_Initialize  text5        00EEB
-__end_of_TMR1_Initialize    text4        00EB7
-__end_of_TMR3_Initialize    text3        00ED5
-__end_of___wmul             text11       00F20
-__end_of__initialization    cinit        00146
-__end_of_atoi               text9        00791
-__end_of_copy_frame         text6        00FC0
-__end_of_isdigit            text10       00EC6
-__end_of_isr                intentry     00103
-__end_of_main               maintext     00576
-__end_of_periperal_init     text2        007FF
-__end_of_pin_manager        text1        00F51
-__end_of_writeUART          text8        007F6
-__end_ofi1_writeUART        text13       00F04
-__initialization            cinit        00105
+__end_of_ACTION             text7        0050E
+__end_of_EUSART_Initialize  text5        00718
+__end_of_TMR1_Initialize    text4        00742
+__end_of_TMR3_Initialize    text3        00727
+__end_of___wmul             text11       006E9
+__end_of__initialization    cinit        000F2
+__end_of_atoi               text9        00579
+__end_of_copy_frame         text6        00639
+__end_of_isdigit            text10       00736
+__end_of_isr                intentry     000AF
+__end_of_main               maintext     003E4
+__end_of_periperal_init     text2        0074B
+__end_of_pin_manager        text1        0068F
+__end_of_writeUART          text8        006CD
+__end_ofi1_writeUART        text13       00702
+__initialization            cinit        000B1
 __pbssBANK0                 bssBANK0     0004D
 __pbssBANK1                 bssBANK1     000D2
 __pbssCOMMON                bssCOMMON    00070
@@ -709,26 +689,26 @@ __pdataBANK0                dataBANK0    0005B
 __pdataBANK1                dataBANK1    000A0
 __pdataBANK2                dataBANK2    00120
 __pdataBANK3                dataBANK3    001A0
-__pidataBANK0               idataBANK0   00002
-__pidataBANK1               idataBANK1   00F51
-__pidataBANK2               idataBANK2   00791
-__pidataBANK3               idataBANK3   00FC0
+__pidataBANK0               idataBANK0   00757
+__pidataBANK1               idataBANK1   00639
+__pidataBANK2               idataBANK2   00579
+__pidataBANK3               idataBANK3   005C1
 __pintentry                 intentry     00004
-__pmaintext                 maintext     0014A
-__pstringtext1              stringtext1  01000
+__pmaintext                 maintext     000F6
+__pstringtext1              stringtext1  0068F
 __pstringtext2              stringtext2  00000
-__ptext1                    text1        00F20
-__ptext10                   text10       00EB7
-__ptext11                   text11       00F04
-__ptext13                   text13       00EEB
-__ptext2                    text2        007F6
-__ptext3                    text3        00EC6
-__ptext4                    text4        00EAB
-__ptext5                    text5        00ED5
-__ptext6                    text6        00F83
-__ptext7                    text7        00576
-__ptext8                    text8        007D9
-__ptext9                    text9        00726
+__ptext1                    text1        0066B
+__ptext10                   text10       00727
+__ptext11                   text11       006CD
+__ptext13                   text13       006E9
+__ptext2                    text2        00742
+__ptext3                    text3        00718
+__ptext4                    text4        00736
+__ptext5                    text5        00702
+__ptext6                    text6        00601
+__ptext7                    text7        003E4
+__ptext8                    text8        006B0
+__ptext9                    text9        0050E
 __size_of_ACTION            (abs)        00000
 __size_of_EUSART_Initialize (abs)        00000
 __size_of_TMR1_Initialize   (abs)        00000
@@ -743,37 +723,36 @@ __size_of_periperal_init    (abs)        00000
 __size_of_pin_manager       (abs)        00000
 __size_of_writeUART         (abs)        00000
 __size_ofi1_writeUART       (abs)        00000
-_atoi                       text9        00726
+_atoi                       text9        0050E
 _child_LOCK                 dataBANK3    001A0
 _copy                       dataBANK2    00120
-_copy_frame                 text6        00F83
-_curtFlag1                  bssBANK0     00059
-_curtFlag2                  bssBANK1     000E8
-_i                          bssCOMMON    00074
-_isdigit                    text10       00EB7
-_isdigit$740                cstackBANK0  00020
+_copy_frame                 text6        00601
+_curtFlag1                  bssCOMMON    00074
+_i                          bssCOMMON    00072
+_isdigit                    text10       00727
+_isdigit$611                cstackBANK0  00020
 _isr                        intentry     00004
-_k                          bssBANK0     00057
-_main                       maintext     0014A
+_k                          bssBANK0     00055
+_main                       maintext     000F6
 _man                        dataBANK0    0005B
 _name                       dataBANK2    00144
-_periperal_init             text2        007F6
-_pin_manager                text1        00F20
+_periperal_init             text2        00742
+_pin_manager                text1        0066B
 _st                         dataBANK1    000A0
-_sw                         bssBANK1     000D2
-_writeUART                  text8        007D9
+_sw                         bssBANK0     00053
+_writeUART                  text8        006B0
 atoi@a                      cstackBANK0  0002B
 atoi@s                      cstackBANK0  0002D
 atoi@sign                   cstackBANK0  0002A
 btemp                       (abs)        0007E
-clear_ram0                  clrtext      00E9F
+clear_ram0                  clrtext      00751
 copy_frame@end              cstackBANK0  00022
 copy_frame@start            cstackBANK0  00020
-end_of_initialization       cinit        00146
-i1_writeUART                text13       00EEB
+end_of_initialization       cinit        000F2
+i1_writeUART                text13       006E9
 i1writeUART@Tx_count        cstackCOMMON 00078
 i1writeUART@str2Write       cstackCOMMON 00077
-init_ram                    inittext     00EA5
+init_ram                    inittext     0074B
 int$flags                   (abs)        0007E
 intlevel0                   functab      00000
 intlevel1                   functab      00000
@@ -795,8 +774,8 @@ main@start_flag             cstackBANK4  00230
 reset_vec                   reset_vec    00000
 stackhi                     (abs)        022EF
 stacklo                     (abs)        02154
-start                       init         00103
-start_initialization        cinit        00105
+start                       init         000AF
+start_initialization        cinit        000B1
 writeUART@Tx_count          cstackBANK0  00021
 writeUART@str2Write         cstackBANK0  00023
 wtemp0                      (abs)        0007E
@@ -806,7 +785,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 147 in file "blynd.c"
+		line 133 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -848,7 +827,7 @@ Total ram usage:       26 bytes
 
  *************** function _pin_manager *****************
  Defined at:
-		line 549 in file "blynd.c"
+		line 466 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -878,7 +857,7 @@ Total ram usage:        0 bytes
 
  *************** function _periperal_init *****************
  Defined at:
-		line 141 in file "blynd.c"
+		line 127 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -910,7 +889,7 @@ Total ram usage:        0 bytes
 
  *************** function _TMR3_Initialize *****************
  Defined at:
-		line 518 in file "blynd.c"
+		line 435 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -940,7 +919,7 @@ Total ram usage:        0 bytes
 
  *************** function _TMR1_Initialize *****************
  Defined at:
-		line 487 in file "blynd.c"
+		line 404 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -970,7 +949,7 @@ Total ram usage:        0 bytes
 
  *************** function _EUSART_Initialize *****************
  Defined at:
-		line 448 in file "blynd.c"
+		line 365 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1000,7 +979,7 @@ Total ram usage:        0 bytes
 
  *************** function _copy_frame *****************
  Defined at:
-		line 325 in file "blynd.c"
+		line 266 in file "blynd.c"
  Parameters:    Size  Location     Type
   start           2    0[BANK0 ] int 
   end             2    2[BANK0 ] int 
@@ -1031,7 +1010,7 @@ Total ram usage:        5 bytes
 
  *************** function _ACTION *****************
  Defined at:
-		line 340 in file "blynd.c"
+		line 281 in file "blynd.c"
  Parameters:    Size  Location     Type
   Switch_Num_1    1    wreg     unsigned char 
   Switch_Num_1    1   14[BANK0 ] unsigned char 
@@ -1047,8 +1026,8 @@ Total ram usage:        5 bytes
   child_lock_n    2   26[BANK0 ] int 
   children        2   24[BANK0 ] int 
   FanSpeed        2   22[BANK0 ] int 
-  switch_statu    2   37[BANK0 ] int 
-  response_sta    2   35[BANK0 ] int 
+  response_sta    2   37[BANK0 ] int 
+  switch_statu    2   35[BANK0 ] int 
   SwNum           2   33[BANK0 ] int 
  Return value:  Size  Location     Type
                   1    wreg      void 
@@ -1076,7 +1055,7 @@ Total ram usage:       25 bytes
 
  *************** function _writeUART *****************
  Defined at:
-		line 435 in file "blynd.c"
+		line 352 in file "blynd.c"
  Parameters:    Size  Location     Type
   str2Write       1    wreg     PTR unsigned char 
 		 -> st(50), 
@@ -1110,7 +1089,7 @@ Total ram usage:        4 bytes
 
  *************** function _atoi *****************
  Defined at:
-		line 5 in file "C:\Program Files\Microchip\xc8\v1.45\sources\common\atoi.c"
+		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR const unsigned char 
 		 -> ACTION@FanSpeedString(2), ACTION@SwNumString(2), 
@@ -1145,7 +1124,7 @@ Total ram usage:        8 bytes
 
  *************** function _isdigit *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v1.45\sources\common\isdigit.c"
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1175,7 +1154,7 @@ Total ram usage:        2 bytes
 
  *************** function ___wmul *****************
  Defined at:
-		line 15 in file "C:\Program Files\Microchip\xc8\v1.45\sources\common\Umul16.c"
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2    0[BANK0 ] unsigned int 
   multiplicand    2    2[BANK0 ] unsigned int 
@@ -1206,7 +1185,7 @@ Total ram usage:        6 bytes
 
  *************** function _isr *****************
  Defined at:
-		line 70 in file "blynd.c"
+		line 72 in file "blynd.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1236,7 +1215,7 @@ Total ram usage:        2 bytes
 
  *************** function i1_writeUART *****************
  Defined at:
-		line 435 in file "blynd.c"
+		line 352 in file "blynd.c"
  Parameters:    Size  Location     Type
   str2Write       1    wreg     PTR unsigned char 
 		 -> st(50), 
@@ -1270,38 +1249,38 @@ Total ram usage:        4 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files\Microchip\xc8\v1.45\sources\common\Umul16.c
-		___wmul        		CODE           	0F04	0000	29
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+		___wmul        		CODE           	06CD	0000	29
 
-C:\Program Files\Microchip\xc8\v1.45\sources\common\Umul16.c estimated size: 29
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c estimated size: 29
 
-C:\Program Files\Microchip\xc8\v1.45\sources\common\isdigit.c
-		_isdigit       		CODE           	0EB7	0000	16
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+		_isdigit       		CODE           	0727	0000	16
 
-C:\Program Files\Microchip\xc8\v1.45\sources\common\isdigit.c estimated size: 16
-
-C:\Program Files\Microchip\xc8\v1.45\sources\common\atoi.c
-		_atoi          		CODE           	0726	0000	108
-
-C:\Program Files\Microchip\xc8\v1.45\sources\common\atoi.c estimated size: 108
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c estimated size: 16
 
 blynd.c
-		_TMR1_Initialize		CODE           	0EAB	0000	13
-		_periperal_init		CODE           	07F6	0000	10
-		_TMR3_Initialize		CODE           	0EC6	0000	16
-		_pin_manager   		CODE           	0F20	0000	50
-		_main          		CODE           	014A	0000	1069
-		_EUSART_Initialize		CODE           	0ED5	0000	23
-		_ACTION        		CODE           	0576	0000	433
-		_isr           		CODE           	0004	0000	256
-		_copy_frame    		CODE           	0F83	0000	62
-		_writeUART     		CODE           	07D9	0000	30
+		_TMR1_Initialize		CODE           	0736	0000	13
+		_periperal_init		CODE           	0742	0000	10
+		_TMR3_Initialize		CODE           	0718	0000	16
+		_pin_manager   		CODE           	066B	0000	37
+		_main          		CODE           	00F6	0000	751
+		_EUSART_Initialize		CODE           	0702	0000	23
+		_ACTION        		CODE           	03E4	0000	299
+		_isr           		CODE           	0004	0000	172
+		_copy_frame    		CODE           	0601	0000	57
+		_writeUART     		CODE           	06B0	0000	30
 
-blynd.c estimated size: 1962
+blynd.c estimated size: 1408
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c
+		_atoi          		CODE           	050E	0000	108
+
+C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\atoi.c estimated size: 108
 
 shared
-		i1_writeUART   		CODE           	0EEB	0000	26
-		__initialization		CODE           	0105	0000	66
+		i1_writeUART   		CODE           	06E9	0000	26
+		__initialization		CODE           	00B1	0000	66
 
 shared estimated size: 92
 

@@ -1,10 +1,10 @@
 
 # 1 "blynd.c"
 
-# 4 "C:\Program Files\Microchip\xc8\v1.45\include\__size_t.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\__size_t.h"
 typedef unsigned size_t;
 
-# 7 "C:\Program Files\Microchip\xc8\v1.45\include\stdarg.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -13,17 +13,17 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 43 "C:\Program Files\Microchip\xc8\v1.45\include\stdio.h"
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
 struct __prbuf
 {
 char * ptr;
 void (* func)(char);
 };
 
-# 29 "C:\Program Files\Microchip\xc8\v1.45\include\errno.h"
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\errno.h"
 extern int errno;
 
-# 12 "C:\Program Files\Microchip\xc8\v1.45\include\conio.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\conio.h"
 extern void init_uart(void);
 
 extern char getch(void);
@@ -37,7 +37,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 88 "C:\Program Files\Microchip\xc8\v1.45\include\stdio.h"
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -64,7 +64,7 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 7 "C:\Program Files\Microchip\xc8\v1.45\include\stdlib.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdlib.h"
 typedef unsigned short wchar_t;
 
 # 15
@@ -113,11 +113,11 @@ extern void free(void *);
 extern void * realloc(void *, size_t);
 
 
-# 13 "C:\Program Files\Microchip\xc8\v1.45\include\xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 86 "C:\Program Files\Microchip\xc8\v1.45\include\stdlib.h"
+# 86 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdlib.h"
 extern int atexit(void (*)(void));
 extern char * getenv(const char *);
 extern char ** environ;
@@ -139,7 +139,7 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 extern char * ftoa(float f, int * status);
 
 
-# 14 "blynd.c"
+# 20 "blynd.c"
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -158,12 +158,12 @@ extern char * ftoa(float f, int * status);
 #pragma config LPBOR = OFF
 #pragma config LVP = OFF
 
-# 26 "C:\Program Files\Microchip\xc8\v1.45\include\htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
-# 50 "C:\Program Files\Microchip\xc8\v1.45\include\pic16f1526.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1526.h"
 extern volatile unsigned char INDF0 @ 0x000;
 
 asm("INDF0 equ 00h");
@@ -4944,7 +4944,7 @@ extern volatile __bit nTO @ (((unsigned) &STATUS)*8) + 4;
 extern volatile __bit nWPUEN @ (((unsigned) &OPTION_REG)*8) + 7;
 
 
-# 28 "C:\Program Files\Microchip\xc8\v1.45\include\pic.h"
+# 28 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic.h"
 #pragma intrinsic(__nop)
 extern void __nop(void);
 
@@ -4966,7 +4966,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 53 "blynd.c"
+# 55 "blynd.c"
 int curtFlag1=0, curtFlag2=0, curtFlag;
 int i=0,j=0,cnt=0,FAN_SPEED=0,FAN_SPEED1=0;
 int FAN_FLAG=0, TX_FLAG=0;
@@ -4985,27 +4985,11 @@ int TimerCounter1=0,TimerCounter2=0;
 
 void writeUART(char *str2Write);
 interrupt void isr(){
-if(PIE3bits.TMR3IE==1 && PIR3bits.TMR3IF==1)
-{
-PIR3bits.TMR3IF=0;
-if(TimerCounter2>=224){
-RA3=0; RA2=0;
-st[9]='G'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-T3CONbits.TMR3ON=0;
-st[13]='G'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-}
-else if(curtFlag2){
-TimerCounter2=TimerCounter2+1;
-TMR3H=0x0B; TMR3L=0xDC; T3CONbits.TMR3ON = 1;
-
-}
-}
-
 
 if(PIE1bits.TMR1IE == 1 && PIR1bits.TMR1IF==1)
 {
 PIR1bits.TMR1IF=0;
-if(TimerCounter1>=125){
+if(TimerCounter1>=108){
 RF1=0; RF0=0;
 st[1]='G'; st[2]='0'; st[3]='0'; st[4]='1'; writeUART(st+1);
 T1CONbits.TMR1ON = 0;
@@ -5071,7 +5055,7 @@ int RX_CHK_FLAG_start1 = 0 ,RX_CHK_FLAG_start2 = 0, start_flag=0, RX_CHK_FLAG_en
 pin_manager();
 periperal_init();
 
-RF1 = 0; RF0 = 0; RA3 = 0; RA2 = 0;
+RF1 = 0; RF0 = 0;
 M1=1; M2=1; M3=1; M4=1;
 st[0]='%'; st[10]='@';
 
@@ -5167,6 +5151,7 @@ TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
 M1=0; man=1;
 }
 
+
 if(child_LOCK[3]==0 && RF5==0 && M2==0)
 {
 if(man==1){
@@ -5189,52 +5174,6 @@ TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
 M2=0; man=1;
 }
 
-
-if(child_LOCK[5]==0 && RF3==0 && M3==0)
-{
-if(man==1)
-{
-st[9]='R'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-RA2=0; RA3=0; curtFlag2=0; TimerCounter2=0;
-}
-M3=1; man=1;
-}
-
-if(child_LOCK[5]==0 && RF3==1 && M3==1)
-{
-if(man==1)
-{
-st[13]='R'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-RA2=0;
-st[9]='R'; st[10]='1'; st[11]='0'; st[12]='3'; writeUART(st+9);
-RA3=1; curtFlag2=1; TimerCounter2=0;
-TMR3H=0x0B; TMR3L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-}
-M3=0; man=1;
-}
-
-
-if(child_LOCK[7]==0 && RF2==0 && M4==0)
-{
-if(man==1){
-st[13]='R'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-RA2=0; RA3=0; curtFlag2=0; TimerCounter2=0;
-}
-M4=1; man=1;
-}
-
-if(child_LOCK[7]==0 && RF2==1 && M4==1)
-{
-if(man==1)
-{
-st[9]='R'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-RA3=0;
-st[13]='R'; st[14]='1'; st[15]='0'; st[16]='4'; writeUART(st+13);
-RA2=1; curtFlag2=1; TimerCounter2=0;
-TMR1H=0x0B; TMR1L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-}
-M4=0; man=1;
-}
 }
 
 }
@@ -5320,30 +5259,6 @@ RF0=0; RF1=0; T1CONbits.TMR1ON = 0; curtFlag1=0; TimerCounter1=0;
 }
 break;
 
-case 3:
-M3=switch_status;
-if(switch_status==1){
-RA2=0;
-st[13]='G'; st[14]='0'; st[15]='0'; st[16]='4'; writeUART(st+13);
-RA3=1; curtFlag2=1; TimerCounter2=0;
-TMR3H=0x0B; TMR3L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-}
-else{
-RA2=0; RA3=0; T1CONbits.TMR1ON = 0; curtFlag2=0; TimerCounter2=0;
-}
-break;
-case 4:
-M4=switch_status;
-if(switch_status==1){
-RA3=0;
-st[9]='G'; st[10]='0'; st[11]='0'; st[12]='3'; writeUART(st+9);
-RA2=1; curtFlag2=1; TimerCounter2=0;
-TMR1H=0x0B; TMR1L=0xDC; PIR3bits.TMR3IF=0; T3CONbits.TMR3ON = 1;
-}
-else{
-RA2=0; RA3=0; T3CONbits.TMR3ON = 0; curtFlag2=0; TimerCounter2=0;
-}
-break;
 default:
 break;
 }
@@ -5425,7 +5340,7 @@ PIE1bits.TMR1IE = 1;
 
 T1CONbits.TMR1ON = 1;
 
-# 516
+# 433
 }
 
 void TMR3_Initialize(void){
@@ -5481,34 +5396,24 @@ TRISFbits.TRISF7=1;
 
 WPUE=0x00;
 ANSELE=0x00;
-TRISEbits.TRISE3=1;
-TRISEbits.TRISE5=0;
+
+
 
 
 WPUD=0x00;
 ANSELD=0x00;
 TRISD=0xFF;
 
-
-TRISCbits.TRISC0=0;
-TRISCbits.TRISC1=0;
-
-
+# 501
 ANSELB=0x00;
-TRISBbits.TRISB1=0;
-TRISBbits.TRISB3=0;
+
+
 WPUB = 0x00;
 
 
 ANSELA = 0x00;
-TRISAbits.TRISA0=0;
-TRISAbits.TRISA1=0;
-TRISAbits.TRISA2=0;
-TRISAbits.TRISA3=0;
 
-TRISAbits.TRISA5=1;
-
-# 604
+# 521
 TRISCbits.TRISC6 = 0;
 TRISCbits.TRISC7 = 1;
 
