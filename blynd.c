@@ -1,9 +1,11 @@
 /*
- THIS CODE IS FOR ONLY ONE CURTAIN
+ THIS CODE IS FOR ONLY ONE CURTAIN 
+ * Note: this code only for entry door which have three wires to operate
  * PCB: 5.4G17
  * SWITCH>>LOAD
  * RF3>>RA3
  * RF2>>RA2
+ * client : zoheb
  * Note: this code is for giving delY 13.5 SECONDS;
  * 108*120=13500ms = 13.5 seconds
  * NEUTRAL>>LIVE
@@ -43,11 +45,11 @@
 
 #define OPEN_1 RF1
 #define CLOSE_1 RF0
-
+#define STOP_MOTOR_OUTPUT RA3
 
 #define OPEN_INPUT_1 RF7
 #define CLOSE_INPUT_1 RF5
-
+#define STOP_MOTOR_INPUT RF3
 
 #define REQUIRED_CURTAIN_DELAY_IN_SECONDS 30000 
 #define CURTAIN_COUNTER (REQUIRED_CURTAIN_DELAY_IN_SECONDS / 125)
@@ -258,6 +260,27 @@ void main() {
                 }
                 M2=0;                man=1;
 			}  
+        
+           if(child_LOCK[5]==OFF && STOP_MOTOR_INPUT==OFF && M3==OFF)
+			{    
+                if(man==1){
+                st[9]='R';                st[10]='0';                st[11]='0';                st[12]='3';
+                writeUART(st+9);
+                STOP_MOTOR_OUTPUT = OFF;			
+				}
+                M3=1;                man=1;
+			}
+       
+            if(child_LOCK[5]==OFF && STOP_MOTOR_INPUT==ONN && M3==ONN)
+			{     
+                if(man==1){
+                st[9]='R';                st[10]='1';                st[11]='0';                st[12]='3';        
+                writeUART(st+9);
+                STOP_MOTOR_OUTPUT =ONN;
+         
+                }
+                M3=0;                man=1;
+			}
     
     }
   
@@ -343,7 +366,9 @@ void ACTION(char Switch_Num_10s, char Switch_Num_1s, char sw_status, char speed_
                 CLOSE_1=0;            	OPEN_1=0;           	 	T1CONbits.TMR1ON = 0;       curtFlag1=0;            TimerCounter1=0;
             }
             break;
-     
+        case 3:
+            STOP_MOTOR_OUTPUT = switch_status;
+        break;
         default:
             break;
     }
@@ -476,7 +501,7 @@ void pin_manager()  {
      TRISFbits.TRISF0=0;            // relay 1
      TRISFbits.TRISF1=0;            // relay 2
      TRISFbits.TRISF2=1;            // switch 4
-     TRISFbits.TRISF3=1;            // switch 3
+     TRISFbits.TRISF3=1;            // input motor
      TRISFbits.TRISF4=1;
      TRISFbits.TRISF5=1;            // switch 2
      TRISFbits.TRISF6=1;
@@ -508,7 +533,7 @@ void pin_manager()  {
 //     TRISAbits.TRISA0=0;
 //     TRISAbits.TRISA1=0;
 //     TRISAbits.TRISA2=0;            // relay 4
-//     TRISAbits.TRISA3=0;            // relay 3
+     TRISAbits.TRISA3=0;            // motor stop
 ////     TRISAbits.TRISA4=1;
 //     TRISAbits.TRISA5=1;            // switch 5
      

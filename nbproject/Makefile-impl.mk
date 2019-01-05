@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Door_lock_Blind_Control
+PROJECTNAME=Door_open
 
 # Active Configuration
 DEFAULTCONF=default

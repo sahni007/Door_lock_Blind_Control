@@ -139,7 +139,7 @@ extern char * ultoa(char * buf, unsigned long val, int base);
 extern char * ftoa(float f, int * status);
 
 
-# 20 "blynd.c"
+# 22 "blynd.c"
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -4966,7 +4966,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 55 "blynd.c"
+# 57 "blynd.c"
 int curtFlag1=0, curtFlag2=0, curtFlag;
 int i=0,j=0,cnt=0,FAN_SPEED=0,FAN_SPEED1=0;
 int FAN_FLAG=0, TX_FLAG=0;
@@ -5174,6 +5174,27 @@ TMR1H=0x0B; TMR1L=0xDC; PIR1bits.TMR1IF=0; T1CONbits.TMR1ON = 1;
 M2=0; man=1;
 }
 
+if(child_LOCK[5]==0 && RF3==0 && M3==0)
+{
+if(man==1){
+st[9]='R'; st[10]='0'; st[11]='0'; st[12]='3';
+writeUART(st+9);
+RA3 = 0;
+}
+M3=1; man=1;
+}
+
+if(child_LOCK[5]==0 && RF3==1 && M3==1)
+{
+if(man==1){
+st[9]='R'; st[10]='1'; st[11]='0'; st[12]='3';
+writeUART(st+9);
+RA3 =1;
+
+}
+M3=0; man=1;
+}
+
 }
 
 }
@@ -5258,7 +5279,9 @@ else{
 RF0=0; RF1=0; T1CONbits.TMR1ON = 0; curtFlag1=0; TimerCounter1=0;
 }
 break;
-
+case 3:
+RA3 = switch_status;
+break;
 default:
 break;
 }
@@ -5340,7 +5363,7 @@ PIE1bits.TMR1IE = 1;
 
 T1CONbits.TMR1ON = 1;
 
-# 433
+# 458
 }
 
 void TMR3_Initialize(void){
@@ -5404,7 +5427,7 @@ WPUD=0x00;
 ANSELD=0x00;
 TRISD=0xFF;
 
-# 501
+# 526
 ANSELB=0x00;
 
 
@@ -5413,7 +5436,11 @@ WPUB = 0x00;
 
 ANSELA = 0x00;
 
-# 521
+
+
+TRISAbits.TRISA3=0;
+
+# 546
 TRISCbits.TRISC6 = 0;
 TRISCbits.TRISC7 = 1;
 

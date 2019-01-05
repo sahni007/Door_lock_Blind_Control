@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\Door_lock_Blind_Control.production.hex">
+  <executable name="dist/default/production\Door_open.production.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
-      <used>1877</used>
-      <free>6315</free>
+      <used>1995</used>
+      <free>6197</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
